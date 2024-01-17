@@ -36,3 +36,20 @@ p {
     font-size: 2rem;
     padding-top: 20px;
 }
+
+/* This is the main body styles */
+
+#welcome-div, #prompt-div {
+    border: solid #fff 2px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#welcome-text, #prompt-text {
+    color: #fff;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
