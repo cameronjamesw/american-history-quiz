@@ -54,3 +54,30 @@ p {
     text-align: center;
 }
 
+/* This is the styles for the form */
+
+#form {
+    border: solid #fff 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#form input {
+    border: solid #fff 2px;
+    background-color: transparent;
+    color: #fff;
+}
+
+#top-buttons {
+    width: 100%;
+}
+
+.toggle-button {
+    border-bottom: solid #4169e1 2px;
+    background-color: transparent;
+    color: #fff;
+    width: 50%;
+    font-size: 1.5em;
+    display: inline;
+}

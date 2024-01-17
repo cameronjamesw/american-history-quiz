@@ -23,46 +23,69 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-      <section id="container"> <!-- This contains the content -->
-        <header>
-          <h1 id="heading">American History Quiz</h1>
-        </header>
+    <section id="container">
+      <!-- This contains the content -->
+      <header>
+        <h1 id="heading">American History Quiz</h1>
+      </header>
 
-        <div id="welcome-div">
-          <!-- This div contains the welcome text -->
-          <p id="welcome-text">
-            Welcome to the American History Quiz, a short quiz surrounding the
-            modern history of America, ranging from 21st Century America all the
-            way back to the 18th Century. With 3 levels of difficulty, test your
-            knowledge on multiple levels to see how well you know Uncle Sam’s
-            country!
-          </p>
+      <div id="welcome-div">
+        <!-- This div contains the welcome text -->
+        <p id="welcome-text">
+          Welcome to the American History Quiz, a short quiz surrounding the
+          modern history of America, ranging from 21st Century America all the
+          way back to the 18th Century. With 3 levels of difficulty, test your
+          knowledge on multiple levels to see how well you know Uncle Sam’s
+          country!
+        </p>
+      </div>
+      <br />
+      <br />
+      <div id="prompt-div">
+        <p id="prompt-text">
+          Login or register below to start your American history journey!
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div>
+        <!-- This div contains the form -->
+        <form action="post" id="form">
+          <div id="top-buttons">
+            <h3 class="toggle-button">Register</h3>
+            <h3 class="toggle-button">Login</h3>
           </div>
-          <br />
-          <br />
-          <div id="prompt-div">
-          <p id="prompt-text">
-            Login or register below to start your American history journey!
-          </p>
-        </div>
-
-        <div>
-          <!-- This div contains the form -->
-          <form action="post" id="form">
-            <div>
-                <button>Register</button>
-                <button>Login</button>
-            </div>
-            <div id="inputs">
-            <input type="text" placeholder="Enter Username" id="username" required>
-            <input type="email" placeholder="Email Address" id="email" required>
-            <input type="password" placeholder="Enter Password" id="password" required>
-            <input type="password" placeholder="Confirm Password" id="confirm-password" required>
+          <div id="inputs">
+            <input
+              type="text"
+              placeholder="Enter Username"
+              id="username"
+              required
+            /> <br>  
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+              required
+            /> <br>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              id="password"
+              required
+            /> <br>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              id="confirm-password"
+              required
+            />
           </div>
           <button type="submit">Submit</button>
         </form>
-        </div>
-      </section>
+      </div>
+    </section>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
