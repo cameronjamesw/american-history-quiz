@@ -9,7 +9,12 @@
 }
 
 /* These are the main element styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'anton', 'sans-serif';
 }
 
@@ -17,12 +22,14 @@ p {
     font-family: 'Roboto Condensed', 'sans-serif';
 }
 
+p:hover {
+    color: red;
+}
 /* This is the background for the White House */
 #container {
     background: linear-gradient(rgba(128, 128, 128, 0.8), rgba(50, 50, 50, 0.8)), url('../images/the-white-house.jpg') fixed center / cover;
-    
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 /* This is the header styles */
@@ -35,11 +42,13 @@ p {
     text-decoration: underline;
     font-size: 2rem;
     padding-top: 20px;
+    text-underline-offset: 8px;
 }
 
 /* This is the main body styles */
 
-#welcome-div, #prompt-div {
+#welcome-div,
+#prompt-div {
     border: solid #fff 2px;
     margin-top: 30px;
     margin-left: 20px;
@@ -47,7 +56,8 @@ p {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-#welcome-text, #prompt-text {
+#welcome-text,
+#prompt-text {
     color: #fff;
     padding: 5px;
     font-size: 1.5em;
@@ -70,14 +80,63 @@ p {
 }
 
 #top-buttons {
-    width: 100%;
+    display: flex;
+}
+
+/* This class is to make 'register' and 'login' white, while the underline remains blue */
+.white {
+    color: #fff;
 }
 
 .toggle-button {
-    border-bottom: solid #4169e1 2px;
-    background-color: transparent;
-    color: #fff;
     width: 50%;
+    color: blue;
     font-size: 1.5em;
-    display: inline;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* Input Styles */
+#inputs {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+form input {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+div input:hover {
+    border: red 2px solid;
+}
+
+form input:active {
+    color: red;
+}
+
+form input::placeholder {
+    color: #fff;
+}
+
+/* Submit button Styles */
+
+form button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: transparent;
+    border: red 2px solid;
+    padding: 5px;
+    
 }
