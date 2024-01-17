@@ -18,13 +18,10 @@ h6 {
     font-family: 'anton', 'sans-serif';
 }
 
-p {
+p, input, button {
     font-family: 'Roboto Condensed', 'sans-serif';
 }
 
-p:hover {
-    color: red;
-}
 /* This is the background for the White House */
 #container {
     background: linear-gradient(rgba(128, 128, 128, 0.8), rgba(50, 50, 50, 0.8)), url('../images/the-white-house.jpg') fixed center / cover;
@@ -99,6 +96,7 @@ p:hover {
     text-decoration-thickness: 5px;
     margin-top: 5px;
     margin-bottom: 30px;
+    letter-spacing: 3px;
 }
 
 /* Input Styles */
@@ -113,6 +111,8 @@ form input {
     margin-right: 20px;
     line-height: 20px;
     padding: 5px;
+    font-size: 1em;
+    letter-spacing: 2px;
 }
 
 div input:hover {
@@ -134,9 +134,10 @@ form button {
     margin-bottom: 10px;
     margin-top: 20px;
     font-size: 1em;
-    color: #fff;
     background-color: transparent;
-    border: red 2px solid;
+    border-color: transparent;
+    color: #fff;
+    border-bottom: red 2px solid;
     padding: 5px;
-    
+    letter-spacing: 2px;
 }
