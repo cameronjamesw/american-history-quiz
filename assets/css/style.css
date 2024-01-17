@@ -1,11 +1,11 @@
+/* This overrides default browser settings */
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-#background {
-   /* background: url('../images/the-white-house.jpg') fixed center / cover; */
-}
+
+/* This is the background for the White House */
 #container {
     background: linear-gradient(rgba(128, 128, 128, 0.8), rgba(50, 50, 50, 0.8)), url('../images/the-white-house.jpg') fixed center / cover;
     filter: grayscale(90%);
