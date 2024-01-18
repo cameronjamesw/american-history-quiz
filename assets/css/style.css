@@ -172,6 +172,7 @@ form button:hover {
     #heading {
         font-size: 3em;
     }
+
     /* This section refers to the welcome text */
 
     #welcome-div {
@@ -210,5 +211,60 @@ form button:hover {
 
     #form button {
         font-size: 1.5em;
+    }
+}
+
+/* Medis query for laptops and higher (1024px sand higher) */
+
+@media screen and (min-width: 1024px) {
+    
+    /* This section is for the header */
+
+    #heading {
+        font-size: 4em;
+    }
+
+    /* This section refers to the welcome text */
+
+    #welcome-div {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #prompt-div {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #welcome-text {
+        font-size: 3em;
+        padding: 10px;
+    }
+
+    #prompt-text {
+        font-size: 3.5em;
+    }
+
+    /* This section refers to the form */
+
+    #form {
+        width: 50%;
+    }
+
+    #form-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .toggle-button {
+        font-size: 3em;
+    }
+
+    #inputs {
+        font-size: 2em;
+    }
+
+    #form button {
+        font-size: 2em;
     }
 }
