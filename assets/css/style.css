@@ -113,6 +113,8 @@ form input {
     padding: 5px;
     font-size: 1em;
     letter-spacing: 2px;
+    display: inline;
+    flex-basis: 0 1 auto;
 }
 
 div input:hover {
@@ -125,6 +127,13 @@ form input:active {
 
 form input::placeholder {
     color: #fff;
+}
+
+i {
+    color: #fff;
+    font-size: 1.5em;
+    align-self: flex-start;
+    padding-left: 10px;
 }
 
 /* Submit button Styles */
