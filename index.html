@@ -43,7 +43,7 @@
     <br />
     <div id="form-div">
       <!-- This div contains the form -->
-      <form action="post" id="form">
+      <form action="https://formdump.codeinstitute.net/" method="POST" id="form">
         <div id="top-buttons">
           <h3 class="toggle-button"><span class="white">Register</span></h3>
           <h3 class="toggle-button"><span class="white">Login</span></h3>
@@ -53,8 +53,9 @@
           <input type="email" placeholder="Email Address" id="email" required /> <br>
           <input type="password" placeholder="Enter Password" id="password" required /> <br>
           <input type="password" placeholder="Confirm Password" id="confirm-password" required />
+          <p id="error-msg"></p>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit-btn">Submit</button>
       </form>
     </div>
   </main>
