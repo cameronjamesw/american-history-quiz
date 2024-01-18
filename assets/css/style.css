@@ -32,7 +32,7 @@ p, input, button {
 /* This is the header styles */
 
 #heading {
-    color: #fff;
+    color: red;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
@@ -40,6 +40,7 @@ p, input, button {
     font-size: 2rem;
     padding-top: 20px;
     text-underline-offset: 8px;
+    text-decoration-thickness: 5px;
 }
 
 /* This is the main body styles */
@@ -47,6 +48,7 @@ p, input, button {
 #welcome-div,
 #prompt-div {
     border: solid #fff 2px;
+    border-radius: 10px;
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
@@ -68,12 +70,14 @@ p, input, button {
     background-color: rgba(0, 0, 0, 0.7);
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 10px;
 }
 
 #form input {
     border: solid #fff 2px;
     background-color: transparent;
     color: #fff;
+    border-radius: 10px;
 }
 
 #top-buttons {
@@ -87,7 +91,7 @@ p, input, button {
 
 .toggle-button {
     width: 50%;
-    color: blue;
+    color: red;
     font-size: 1.5em;
     justify-content: center;
     text-align: center;
@@ -104,8 +108,10 @@ p, input, button {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    flex-basis: 300px;
 }
 
+/* These are the form input styles */
 form input {
     margin-left: 20px;
     margin-right: 20px;
@@ -114,26 +120,17 @@ form input {
     font-size: 1em;
     letter-spacing: 2px;
     display: inline;
-    flex-basis: 0 1 auto;
+    justify-content: flex-end;
 }
 
-div input:hover {
-    border: red 2px solid;
-}
-
-form input:active {
-    color: red;
-}
-
+/* Input placeholder color */
 form input::placeholder {
     color: #fff;
 }
 
-i {
-    color: #fff;
-    font-size: 1.5em;
-    align-self: flex-start;
-    padding-left: 10px;
+#form input:hover {
+    border: red solid 2px;
+    border-radius: 10px;
 }
 
 /* Submit button Styles */
