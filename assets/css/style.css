@@ -157,3 +157,7 @@ form button {
     padding: 5px;
     letter-spacing: 2px;
 }
+
+form button:hover {
+    color: red;
+}
