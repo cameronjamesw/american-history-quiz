@@ -163,9 +163,10 @@ form button:hover {
     color: red;
 }
 
-#error-msg {
+.error-msg {
     color: red;
     font-weight: bold;
+    margin-left: 20px;
 }
 
 /* Media Query for Tablets and higher (768px and higher) */
