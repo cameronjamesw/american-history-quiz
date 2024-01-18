@@ -1,5 +1,10 @@
 /* This is the form validation */
 
+/**
+ *  This function checks the form validation to see
+ * that the username and passwords match the criteria provided and
+ * submits the form if so.
+ */
 function handleSubmit(event) {
     event.preventDefault();
 
@@ -33,11 +38,12 @@ function handleSubmit(event) {
         console.log('Password must contain a number');
         passErrorMsg.innerHTML = 'Password must contain a number.';
     } else {
+        passErrorMsg.innerHTML = '';
+        userErrorMsg.innerHTML = '';
         form.submit();
     }
 }
     
-
 let form = document.getElementById('form');
 form.addEventListener('submit', handleSubmit);
 
