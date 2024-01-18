@@ -42,7 +42,7 @@ footer {
 /* This is the header styles */
 
 #heading {
-    color: red;
+    color: #f00;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
@@ -101,11 +101,10 @@ footer {
 }
 
 .toggle-button {
-    width: 50%;
-    color: red;
-    font-size: 1.5em;
-    justify-content: center;
+    width: 100%;
+    color: #f00;
     text-align: center;
+    font-size: 1.5em;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
@@ -140,7 +139,7 @@ form input::placeholder {
 }
 
 #form input:hover {
-    border: red solid 2px;
+    border: #f00 solid 2px;
     border-radius: 10px;
 }
 
@@ -154,19 +153,45 @@ form button {
     background-color: transparent;
     border-color: transparent;
     color: #fff;
-    border-bottom: red 2px solid;
+    border-bottom: #f00 2px solid;
     padding: 5px;
     letter-spacing: 2px;
 }
 
 form button:hover {
-    color: red;
+    color: #f00;
+    cursor: pointer;
 }
 
 .error-msg {
-    color: red;
+    color: #f00;
     font-weight: bold;
     margin-left: 20px;
+}
+
+/* Signup/Signin Button Styles */
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+form .btn {
+    background-color: #000080;
+    border-radius: 10px;
+    text-decoration: none;
+    border: #000080 2px solid;
+    padding: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form .btn:hover{
+    background-color: #000435;
+    color: #fff;
+    border: #fff 2px solid;
 }
 
 /* Media Query for Tablets and higher (768px and higher) */
