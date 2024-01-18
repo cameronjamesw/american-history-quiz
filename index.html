@@ -1,98 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="An American History Quiz with difficulties ranging from easy to hard"
-    />
-    <meta
-      name="keywords"
-      content="American History, American History Quiz, Quiz, History, History Quiz"
-    />
-    <link
-      rel="icon"
-      type="image"
-      href="assets/images/cartoon-american-flag.png"
-    />
 
-    <title>American History Quiz</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An American History Quiz with difficulties ranging from easy to hard" />
+  <meta name="keywords" content="American History, American History Quiz, Quiz, History, History Quiz" />
+  <link rel="icon" type="image" href="assets/images/cartoon-american-flag.png" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <section id="container">
-      <!-- This contains the content -->
-      <header>
-        <h1 id="heading"><span class="white">American History Quiz</span></h1>
-      </header>
+  <title>American History Quiz</title>
 
-      <div id="welcome-div">
-        <!-- This div contains the welcome text -->
-        <p id="welcome-text">
-          Welcome to the American History Quiz, a short quiz surrounding the
-          modern history of America, ranging from 21st Century America all the
-          way back to the 18th Century. With 3 levels of difficulty, test your
-          knowledge on multiple levels to see how well you know Uncle Sam’s
-          country!
-        </p>
-      </div>
-      <br />
-      <br />
-      <div id="prompt-div">
-        <p id="prompt-text">
-          Login or register below to start your American history journey!
-        </p>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div>
-        <!-- This div contains the form -->
-        <form action="post" id="form">
-          <div id="top-buttons">
-            <h3 class="toggle-button"><span class="white">Register</span></h3>
-            <h3 class="toggle-button"><span class="white">Login</span></h3>
-          </div>
-          <div id="inputs">
-           <input
-              type="text"
-              placeholder="Enter Username"
-              id="username"
-              required
-            /> <br>
-           <input
-              type="email"
-              placeholder="Email Address"
-              id="email"
-              required
-            /> <br>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              id="password"
-              required
-            /> <br>
-          <input
-              type="password"
-              placeholder="Confirm Password"
-              id="confirm-password"
-              required
-            />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-    <!-- This is the Font Awesome Script -->
-    <script
-    src="https://kit.fontawesome.com/3b20d96fa9.js"
-    crossorigin="anonymous"
-  ></script>
+<body>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+  <header>
+    <h1 id="heading"><span class="white">American History Quiz</span></h1>
+  </header>
+  <main id="container">
+    <!-- This contains the content -->
+    <div id="welcome-div">
+      <!-- This div contains the welcome text -->
+      <p id="welcome-text">
+        Welcome to the American History Quiz, a short quiz surrounding the
+        modern history of America, ranging from 21st Century America all the
+        way back to the 18th Century. With 3 levels of difficulty, test your
+        knowledge on multiple levels to see how well you know Uncle Sam’s
+        country!
+      </p>
+    </div>
+    <br />
+    <br />
+    <div id="prompt-div">
+      <p id="prompt-text">
+        Login or register below to start your American history journey!
+      </p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+      <!-- This div contains the form -->
+      <form action="post" id="form">
+        <div id="top-buttons">
+          <h3 class="toggle-button"><span class="white">Register</span></h3>
+          <h3 class="toggle-button"><span class="white">Login</span></h3>
+        </div>
+        <div id="inputs">
+          <input type="text" placeholder="Enter Username" id="username" required /> <br>
+          <input type="email" placeholder="Email Address" id="email" required /> <br>
+          <input type="password" placeholder="Enter Password" id="password" required /> <br>
+          <input type="password" placeholder="Confirm Password" id="confirm-password" required />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    This is the footer
+  </footer>
+
+
+  <!-- This is the Font Awesome Script -->
+  <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
