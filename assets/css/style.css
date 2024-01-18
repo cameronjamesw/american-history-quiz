@@ -133,6 +133,8 @@ form input {
     justify-content: flex-end;
 }
 
+
+
 /* Input placeholder color */
 form input::placeholder {
     color: #fff;
@@ -175,23 +177,32 @@ form button:hover {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 form .btn {
-    background-color: #000080;
+    background-color: #a9a9a9;
     border-radius: 10px;
     text-decoration: none;
-    border: #000080 2px solid;
-    padding: 10px;
+    border: #fff 2px solid;
+    padding: 10px 50px;
     letter-spacing: 3px;
     cursor: pointer;
     font-weight: bold;
 }
 
 form .btn:hover{
-    background-color: #000435;
+    background-color: #363636;
     color: #fff;
     border: #fff 2px solid;
+}
+
+form .active {
+    background-color: #000080;
+}
+
+form .active:hover {
+    background-color: #000080;
 }
 
 /* Media Query for Tablets and higher (768px and higher) */

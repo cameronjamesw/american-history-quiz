@@ -1,3 +1,33 @@
+/* This code switches between sign-in and sign-up */
+
+let signinBtn = document.getElementById('signinBtn');
+let signupBtn = document.getElementById('signupBtn');
+let title = document.getElementById('title');
+let usernameField = document.getElementById('username');
+let passwordField = document.getElementById('password');
+let passwordConfirmedField = document.getElementById('confirm-password');
+
+function showSignin(){
+    title.innerHTML = 'Sign-In';
+    signinBtn.classList.add('active');
+    signupBtn.classList.remove('active');
+    passwordConfirmedField.style.display = 'none';
+    passwordField.setAttribute('placeholder', 'Enter Password')
+    usernameField.setAttribute('placeholder', 'Enter Username');
+};
+
+function showSignup(){
+    title.innerHTML = 'Sign-Up';
+    signupBtn.classList.add('active');
+    signinBtn.classList.remove('active');
+    passwordConfirmedField.style.display = 'block';
+    passwordField.setAttribute('placeholder', 'Create Password');
+    usernameField.setAttribute('placeholder', 'Create Username');
+};
+
+signinBtn.addEventListener('click', showSignin);
+
+signupBtn.addEventListener('click', showSignup)
 /* This is the form validation */
 
 /**
@@ -15,6 +45,7 @@ function handleSubmit(event) {
     let confirmPasswordValue = document.getElementById('confirm-password').value;
     let userErrorMsg = document.getElementById('user-msg');
     let passErrorMsg = document.getElementById('error-msg');
+    let title = document.getElementById('title').innerHTML;
 
     if (usernameLength < 6) {
         console.log('Username must be at least 6 characters');
