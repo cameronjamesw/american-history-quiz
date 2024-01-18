@@ -80,6 +80,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 50px;
     border-radius: 10px;
 }
 
@@ -160,4 +161,54 @@ form button {
 
 form button:hover {
     color: red;
+}
+
+/* Media Query for Tablets and higher (768px and higher) */
+
+@media screen and (min-width: 768px) {
+
+    /* This section refers to the header */
+
+    #heading {
+        font-size: 3em;
+    }
+    /* This section refers to the welcome text */
+
+    #welcome-div {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #prompt-div {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #welcome-text {
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    #prompt-text {
+        font-size: 2.5em;
+    }
+
+    /* This section refers to the form */
+
+    #form {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .toggle-button {
+        font-size: 2em;
+    }
+
+    #inputs {
+        font-size: 1.5em;
+    }
+
+    #form button {
+        font-size: 1.5em;
+    }
 }
