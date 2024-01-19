@@ -82,6 +82,7 @@ function handleSubmit(event) {
         userErrorMsg.innerHTML = '';
         form.submit();
         hideForm();
+        showDifficulty();
     }
 }
     
@@ -95,5 +96,6 @@ function hideForm(){
 }
 
 function showDifficulty(){
-
+    let difficultyDiv = document.getElementById('difficultyDiv');
+    difficultyDiv.style.maxHeight = '800px';
 };
