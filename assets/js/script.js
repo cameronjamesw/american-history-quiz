@@ -1,4 +1,4 @@
-/* This code switches between sign-in and sign-up */
+// This code switches between sign-in and sign-up 
 
 let signinBtn = document.getElementById('signinBtn');
 let signupBtn = document.getElementById('signupBtn');
@@ -7,7 +7,10 @@ let usernameField = document.getElementById('username');
 let passwordField = document.getElementById('password');
 let passwordConfirmedField = document.getElementById('confirm-password');
 
-/* Add Comment */
+/**
+ * This function will hide the 'confirm password' field, as well as changing the title to 'sign-in'
+ * and highlight the sign-in button. Placeholder text changes too.
+ */
 function showSignin(){
     title.innerHTML = 'Sign-In';
     signinBtn.classList.add('active');
@@ -17,7 +20,10 @@ function showSignin(){
     usernameField.setAttribute('placeholder', 'Enter Username');
 };
 
-/* Add comment */
+/**
+ * This function will show the 'confirm passowrd' field, as well as changing the title to 'sign-up'
+ * and highlight the sign-up button. Placeholder text changes too.
+ */
 function showSignup(){
     title.innerHTML = 'Sign-Up';
     signupBtn.classList.add('active');
@@ -30,7 +36,8 @@ function showSignup(){
 signinBtn.addEventListener('click', showSignin);
 
 signupBtn.addEventListener('click', showSignup)
-/* This is the form validation */
+
+// This is the form validation
 
 /**
  *  This function checks the form validation to see
@@ -74,9 +81,19 @@ function handleSubmit(event) {
         passErrorMsg.innerHTML = '';
         userErrorMsg.innerHTML = '';
         form.submit();
+        hideForm();
     }
 }
     
 let form = document.getElementById('form');
 form.addEventListener('submit', handleSubmit);
 
+// This section hides the form to show difficulty
+
+function hideForm(){
+    form.style.display = ('none');
+}
+
+function showDifficulty(){
+
+};

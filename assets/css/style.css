@@ -203,6 +203,32 @@ form .active:hover {
     background-color: #000080;
 }
 
+/* This section is for the difficulties */
+
+#difficultyDiv {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: #fff 2px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 50px;
+}
+
+#difficultyDiv div{
+    padding: 20px;
+    border: #fff 2px solid;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    margin: 50px 50px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
 /* Media Query for Tablets and higher (768px and higher) */
 
 @media screen and (min-width: 768px) {
@@ -251,6 +277,14 @@ form .active:hover {
 
     #form button {
         font-size: 1.5em;
+    }
+
+    /* This section refers to the difficulty buttons */
+    
+    #difficultyDiv div{
+        margin: 50px 150px;
+        font-size: 2em;
+        letter-spacing: 5px;
     }
 }
 
