@@ -133,8 +133,6 @@ form input {
     justify-content: flex-end;
 }
 
-
-
 /* Input placeholder color */
 form input::placeholder {
     color: #fff;

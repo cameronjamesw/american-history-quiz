@@ -7,6 +7,7 @@ let usernameField = document.getElementById('username');
 let passwordField = document.getElementById('password');
 let passwordConfirmedField = document.getElementById('confirm-password');
 
+/* Add Comment */
 function showSignin(){
     title.innerHTML = 'Sign-In';
     signinBtn.classList.add('active');
@@ -16,6 +17,7 @@ function showSignin(){
     usernameField.setAttribute('placeholder', 'Enter Username');
 };
 
+/* Add comment */
 function showSignup(){
     title.innerHTML = 'Sign-Up';
     signupBtn.classList.add('active');
