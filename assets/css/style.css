@@ -145,13 +145,15 @@ form input::placeholder {
 
 /* Submit button Styles */
 
-#submitBtns {
+form #submitBtns {
     display: flex;
-    width: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#guestBtn {
-    justify-content: flex-end;
+form #guestBtn {
+    align-content: center;
+    margin-right: 20px;
 }
 
 form button {
