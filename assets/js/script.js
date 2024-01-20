@@ -89,7 +89,11 @@ function handleSubmit(event) {
         showDifficulty();
     }
 }
-    
+
+
+let guest = document.getElementById('guestBtn');
+guest.addEventListener('click', hideForm);
+
 let form = document.getElementById('form');
 form.addEventListener('submit', handleSubmit);
 
