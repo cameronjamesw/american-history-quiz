@@ -15,7 +15,9 @@ function showSignin(){
     title.innerHTML = 'Sign-In';
     signinBtn.classList.add('active');
     signupBtn.classList.remove('active');
-    passwordConfirmedField.style.display = 'none';
+    passwordConfirmedField.style.maxHeight = '0';
+    passwordConfirmedField.style.paddingTop = '0';
+    passwordConfirmedField.style.paddingBottom = '0';
     passwordField.setAttribute('placeholder', 'Enter Password')
     usernameField.setAttribute('placeholder', 'Enter Username');
 };
@@ -28,7 +30,9 @@ function showSignup(){
     title.innerHTML = 'Sign-Up';
     signupBtn.classList.add('active');
     signinBtn.classList.remove('active');
-    passwordConfirmedField.style.display = 'block';
+    passwordConfirmedField.style.maxHeight = '60px';
+    passwordConfirmedField.style.paddingBottom = '20px';
+    passwordConfirmedField.style.paddingTop = '20px';
     passwordField.setAttribute('placeholder', 'Create Password');
     usernameField.setAttribute('placeholder', 'Create Username');
 };
@@ -91,11 +95,42 @@ form.addEventListener('submit', handleSubmit);
 
 // This section hides the form to show difficulty
 
+/**
+ * This function hides the form
+ */
 function hideForm(){
     form.style.display = ('none');
 }
 
+/**
+ * This function shows the difficulty menu
+ */
 function showDifficulty(){
     let difficultyDiv = document.getElementById('difficultyDiv');
     difficultyDiv.style.maxHeight = '800px';
 };
+
+let diffBtns = document.getElementsByClassName('diffBtn');
+function hoverDiffBtn(){
+  diffBtns.style.backgroundColor = 'red';
+};  
+
+/* document.addEventListener('DOMContentLoaded', function(){
+    let diffBtns = document.getElementsByClassName('diffBtn');
+for ( let diffBtn of diffBtns){
+        diffBtn.addEventListener('onmouseover', hoverRed)
+    }
+}
+); */
+
+// Difficulty Button Click Functions
+
+let easyBtn = document.getElementById('easyBtn');
+let medBtn = document.getElementById('medBtn');
+let hardBtn = document.getElementById('hardBtn');
+
+function borderRed(){
+    easyBtn.style.backgroundColor = 'red';
+};
+
+easyBtn.addEventListener('click', borderRed);
