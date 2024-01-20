@@ -110,27 +110,111 @@ function showDifficulty(){
     difficultyDiv.style.maxHeight = '800px';
 };
 
-let diffBtns = document.getElementsByClassName('diffBtn');
-function hoverDiffBtn(){
+// Come back to this code later
+/*
+ let diffBtns = document.getElementsByClassName('diffBtn');
+function hoverDiffBtn(event){
   diffBtns.style.backgroundColor = 'red';
 };  
 
-/* document.addEventListener('DOMContentLoaded', function(){
+ document.addEventListener('DOMContentLoaded', function(){
     let diffBtns = document.getElementsByClassName('diffBtn');
-for ( let diffBtn of diffBtns){
-        diffBtn.addEventListener('onmouseover', hoverRed)
-    }
-}
-); */
+    
+    for (i = 0; i <= diffBtns.length; i++){
+        console.log(diffBtns[i]);
+        diffBtns[i].addEventListener('mouseover', btnHover);
+    };
+ }
+ ); */
 
-// Difficulty Button Click Functions
 
-let easyBtn = document.getElementById('easyBtn');
-let medBtn = document.getElementById('medBtn');
-let hardBtn = document.getElementById('hardBtn');
+// Come back to this later
+/*
+function btnHover(event){
+    let diffBtns = document.getElementsByClassName('diffBtn');
+    for (i = 0; i <= diffBtns.length; i++){
+        if (diffBtns[0]){
+            diffBtns[0].style.backgroundColor = 'red';
+        } else if (diffBtns[1]){
+            diffBtns[1].style.backgroundColor = 'red';
+        } else {
+         diffBtns[2].style.backgroundColor = 'red';
+    }};
+}; */
 
-function borderRed(){
-    easyBtn.style.backgroundColor = 'red';
+
+// Difficulty Button Hover Functions
+
+// Easy Difficulty Button hover in, hover out
+
+/**
+ * This function makes the easy difficulty button change border and font
+ * color to red 
+ */
+
+function easyHover(event){
+    easyBtn.style.borderColor = 'red';
+    easyBtn.style.color = 'red';
+    easyBtn.style.cursor = 'pointer';
 };
 
-easyBtn.addEventListener('click', borderRed);
+/**
+ * This function makes the easy difficulty button change border 
+ * and font color from red to white
+ */
+function easyOut(event){
+    easyBtn.style.borderColor = 'white';
+    easyBtn.style.color = 'white';
+};
+
+let easyBtn = document.getElementById('easyBtn');
+easyBtn.addEventListener('mouseover', easyHover);
+easyBtn.addEventListener('mouseout', easyOut);
+
+// Medium Difficulty Button hover in, hover out
+/**
+ * This function makes the medium difficulty button change border and font
+ * color to red 
+ */
+function medHover(event){
+    medBtn.style.borderColor = 'red';
+    medBtn.style.color = 'red';
+    medBtn.style.cursor = 'pointer';
+};
+
+/**
+ * This function makes the medium difficulty button change border 
+ * and font color from red to white
+ */
+function medOut(event){
+    medBtn.style.borderColor = 'white';
+    medBtn.style.color = 'white';
+};
+
+let medBtn = document.getElementById('medBtn');
+medBtn.addEventListener('mouseover', medHover);
+medBtn.addEventListener('mouseout', medOut);
+
+// Hard difficulty button hover in, hover out
+/**
+ * This function makes the hard difficulty button change border and font
+ * color to red 
+ */
+function hardHover(event){
+    hardBtn.style.borderColor = 'red';
+    hardBtn.style.color = 'red';
+    hardBtn.style.cursor = 'pointer';
+};
+
+/**
+ * This function makes the hard difficulty button change border 
+ * and font color from red to white
+ */
+function hardOut(event){
+    hardBtn.style.borderColor = 'white';
+    hardBtn.style.color = 'white';
+};
+
+let hardBtn = document.getElementById('hardBtn');
+hardBtn.addEventListener('mouseover', hardHover);
+hardBtn.addEventListener('mouseout', hardOut);
