@@ -18,7 +18,9 @@ h6 {
     font-family: 'anton', 'sans-serif';
 }
 
-p, input, button {
+p,
+input,
+button {
     font-family: 'Roboto Condensed', 'sans-serif';
 }
 
@@ -202,7 +204,7 @@ form .btn {
     font-weight: bold;
 }
 
-form .btn:hover{
+form .btn:hover {
     background-color: #363636;
     color: #fff;
     border: #fff 2px solid;
@@ -226,13 +228,13 @@ form .active:hover {
     justify-content: center;
     align-content: center;
     margin: 20px 50px;
-   /* max-height: 0px;
+    /* max-height: 0px;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: max-height 0.5s; */
 }
 
-#difficultyDiv div{
+#difficultyDiv div {
     padding: 20px;
     border: #fff 2px solid;
     color: #fff;
@@ -254,7 +256,7 @@ form .active:hover {
     margin: 20px 50px;
 }
 
-#questionNoText > p {
+#questionNoText>p {
     color: #f00;
     padding: 30px 0 0 20px;
     text-decoration: underline;
@@ -268,7 +270,7 @@ form .active:hover {
     margin: 20px;
 }
 
-#questionText > h3 {
+#questionText>h3 {
     text-align: left;
     border: #fff 2px solid;
     border-radius: 10px;
@@ -283,17 +285,18 @@ form .active:hover {
     border-radius: 30px;
 }
 
-.answerText > p {
+.answerText>p {
     font-size: 1.5em;
     padding: 20px;
     text-align: center;
 }
+
 #checkAnswerBtn {
     display: flex;
     justify-content: center;
 }
 
-#checkAnswerBtn > p {
+#checkAnswerBtn>p {
     border: #f00 2px solid;
     font-weight: bold;
     padding: 15px;
@@ -356,8 +359,8 @@ form .active:hover {
     }
 
     /* This section refers to the difficulty buttons */
-    
-    #difficultyDiv div{
+
+    #difficultyDiv div {
         margin: 50px 150px;
         font-size: 2em;
         letter-spacing: 5px;
@@ -365,54 +368,55 @@ form .active:hover {
 
     /* This is the Question Window section */
 
-#questionWindow {
-    margin: 20px 50px;
-}
+    #questionWindow {
+        margin: 20px 50px;
+    }
 
-#questionNoText > p {
-    padding: 30px 0 0 20px;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 5px;
-    font-size: 2em;
-}
+    #questionNoText>p {
+        padding: 30px 0 0 20px;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 5px;
+        font-size: 2em;
+    }
 
-#questionText {
-    margin: 20px;
-}
+    #questionText {
+        margin: 20px;
+    }
 
-#questionText > h3 {
-    text-align: left;
-    padding: 10px;
-    font-size: 2em;
-    letter-spacing: 3px;
-}
+    #questionText>h3 {
+        text-align: left;
+        padding: 10px;
+        font-size: 2em;
+        letter-spacing: 3px;
+    }
 
-.answerText {
-    margin: 20px;
-}
+    .answerText {
+        margin: 20px;
+    }
 
-.answerText > p {
-    font-size: 2em;
-    padding: 20px;
-}
-#checkAnswerBtn {
-    display: flex;
-    justify-content: center;
-}
+    .answerText>p {
+        font-size: 2em;
+        padding: 20px;
+    }
 
-#checkAnswerBtn > p {
-    padding: 15px;
-    font-size: 2em;
-    margin: 0 30px 20px 30px;
-    text-align: center;
-    width: fit-content;
-}
+    #checkAnswerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    #checkAnswerBtn>p {
+        padding: 15px;
+        font-size: 2em;
+        margin: 0 30px 20px 30px;
+        text-align: center;
+        width: fit-content;
+    }
 }
 
 /* Medis query for laptops and higher (1024px sand higher) */
 
 @media screen and (min-width: 1024px) {
-    
+
     /* This section is for the header */
 
     #heading {
@@ -422,13 +426,11 @@ form .active:hover {
     /* This section refers to the welcome text */
 
     #welcome-div {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin: 0 100px;
     }
 
     #prompt-div {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin: 0 100px;
     }
 
     #welcome-text {
@@ -461,5 +463,77 @@ form .active:hover {
 
     #form button {
         font-size: 2em;
+    }
+
+    /* This section is for the difficulties */
+
+#difficultyDiv {
+    margin: 20px 100px;
+}
+
+#difficultyDiv div {
+    padding: 20px;
+    border: #fff 2px solid;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    margin: 50px 50px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+    /* This is the Question Window section */
+
+    #questionWindow {
+        margin: 20px 100px;
+    }
+
+    #questionNoText>p {
+        padding: 30px 0 0 20px;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 5px;
+        font-size: 2em;
+    }
+
+    #questionText {
+        margin: 20px;
+    }
+
+    #questionText>h3 {
+        text-align: left;
+        padding: 10px;
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+
+    #answerDiv {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .answerText {
+        margin: 20px;
+        flex: 1 0 auto;
+    }
+
+    .answerText>p {
+        font-size: 3em;
+        padding: 30px;
+    }
+
+    #checkAnswerBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    #checkAnswerBtn>p {
+        padding: 15px;
+        font-size: 2em;
+        margin: 0 30px 20px 30px;
+        text-align: center;
+        width: fit-content;
     }
 }

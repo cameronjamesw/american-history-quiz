@@ -48,7 +48,7 @@
           <h3 id="formHeading"><span class="white" id="title">Sign-Up</span></h3>
         </div>
         <div id="inputs">
-          <input type="text" placeholder="Create Username" id="username" required /> 
+          <input type="text" placeholder="Create Username" id="username" required />
           <p id="user-msg" class="error-msg"></p><br>
           <input type="email" placeholder="Email Address" id="email" required /> <br>
           <input type="password" placeholder="Create Password" id="password" required /> <br>
@@ -56,36 +56,56 @@
           <p id="error-msg" class="error-msg"></p>
         </div>
         <div id="submitBtns">
-        <button type="submit" id="submit-btn">Submit</button>
-        <button type="text" id="guestBtn">Continue as a Guest</button>
-      </div>
-      <br><br>
-      <!-- This div contains the Sign-In and Sign-Up Buttons -->
+          <button type="submit" id="submit-btn">Submit</button>
+          <button type="text" id="guestBtn">Continue as a Guest</button>
+        </div>
+        <br><br>
+        <!-- This div contains the Sign-In and Sign-Up Buttons -->
         <div class="buttons">
-      <button class="btn active" type="button"  id="signupBtn" >Sign Up</button>
-      <button class="btn" type="button" id="signinBtn">Sign In</button>
-    </div>
-    </form>
+          <button class="btn active" type="button" id="signupBtn">Sign Up</button>
+          <button class="btn" type="button" id="signinBtn">Sign In</button>
+        </div>
+      </form>
     </div>
 
     <!-- This div contains the Difficulty Section -->
     <div id="difficultyDiv">
-      <div id="easyBtn" data-type='easyBtn' class="diffBtn"><h3>Easy</h3></div>
-      <div id="medBtn" data-type='medBtn' class="diffBtn"><h3>Medium</h3></div>
-      <div id="hardBtn" data-type="hardBtn" class="diffBtn"><h3>Hard</h3></div>
+      <div id="easyBtn" data-type='easyBtn' class="diffBtn">
+        <h3>Easy</h3>
+      </div>
+      <div id="medBtn" data-type='medBtn' class="diffBtn">
+        <h3>Medium</h3>
+      </div>
+      <div id="hardBtn" data-type="hardBtn" class="diffBtn">
+        <h3>Hard</h3>
+      </div>
     </div>
 
     <!-- This section contains the Quiz Window -->
     <section id="questionWindow">
-      <div id="questionNoText"><p><span class="white">Question 1 of 5</span></p></div>
-      <div id="questionText"><h3>Who was the first President of the United State of America?</h3></div>
-      <div id="AnswerDiv">
-      <div class="answerText"><p>John Adams</p></div>
-      <div class="answerText"><p>George Washington</p></div>
-      <div class="answerText"><p>Benjamin Franklin</p></div>
-      <div class="answerText"><p>Donald Trump</p></div>
-      <div id="checkAnswerBtn"><p>Check Answer</p></div>
-    </div>
+      <div id="questionNoText">
+        <p><span class="white">Question 1 of 5</span></p>
+      </div>
+      <div id="questionText">
+        <h3>Who was the first President of the United State of America?</h3>
+      </div>
+      <div id="answerDiv">
+        <div class="answerText">
+          <p>John Adams</p>
+        </div>
+        <div class="answerText">
+          <p>George Washington</p>
+        </div>
+        <div class="answerText">
+          <p>Benjamin Franklin</p>
+        </div>
+        <div class="answerText">
+          <p>Donald Trump</p>
+        </div>
+      </div>
+      <div id="checkAnswerBtn">
+        <p>Check Answer</p>
+      </div>
     </section>
   </main>
   <footer>
