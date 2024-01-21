@@ -250,6 +250,66 @@ form .active:hover {
     letter-spacing: 3px;
 }
 
+/* This is the Question Window section */
+
+#questionWindow {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px 50px;
+}
+
+#questionNoText > p {
+    color: #f00;
+    padding: 30px 0 0 20px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+}
+
+#questionText {
+    border: #f00 2px solid;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#questionText > h3 {
+    text-align: left;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #000;
+}
+
+.answerText {
+    margin: 20px;
+    background-color: #000;
+    border: #fff 2px solid;
+    border-radius: 30px;
+}
+
+.answerText > p {
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+}
+#checkAnswerBtn {
+    display: flex;
+    justify-content: center;
+}
+
+#checkAnswerBtn > p {
+    border: #f00 2px solid;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    margin: 0 30px 20px 30px;
+    background-color: #000;
+    text-align: center;
+    width: fit-content;
+}
+
 /* Media Query for Tablets and higher (768px and higher) */
 
 @media screen and (min-width: 768px) {
