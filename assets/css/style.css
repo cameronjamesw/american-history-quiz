@@ -92,7 +92,7 @@ footer {
     border-radius: 10px;
 }
 
-#top-buttons {
+#formTitleDiv {
     display: flex;
 }
 
@@ -101,7 +101,7 @@ footer {
     color: #fff;
 }
 
-.toggle-button {
+#formHeading {
     width: 100%;
     color: #f00;
     text-align: center;
@@ -191,7 +191,7 @@ form button:hover {
 
 .buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 30px;
     margin-top: 40px;
 }
