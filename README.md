@@ -42,3 +42,25 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
     - Underneath the welcome text there is a registration/login form where the user can either sign up or log in to their account on the quiz website. With the help of JavaScript, the user will be able to toggle between 'log-ign' and 'sign-up' using two buttons at the top of the form. This will ensure that both log-in options are contained within the same box for convenience; however this also has a sleek look to it improving the user's experience. 
     - With the use of JavaScript, the form shall have multiple levels of validation regarding both the username and the password, this ensures that the user will not be able to create a week password or username - thus protecting their data whilst using the website. The form's of validation will ensure that the 'password' and 'confirm password' fields match, that the password is of a certain length, and that it must contain a number. 
     - For the aesthetic of the form, it shall fdllow suit with the rest of the website's color pallet. White text contained within a black box with a white border of 2px. Through keeping up the website's aesthetic with the form, this reinforces a positive experience for the user. 
+
+### Quiz Window Wireframe
+
+![A wireframe of the quiz window illustrating how it was conceptulised during wireframing](assets/images/wireframe-2.jpg)
+
+- **Question Counter**
+    - Right at the top of the quiz window the user will be able to see the question number that they are on. This will be displayed as 'Question X of X', through allowing the user to see what question number they are on this will make the whole quiz process both natural and fluent.
+
+- **Quiz Window**
+    - The quiz window shall follow the same aesthetic as the rest of the website.
+    - The plan for the quiz window is for it to be hidden with CSS until it is to be called using JavaScript. The quiz window will be revealed with JavaScript once the user has submitted the form.
+
+- **Quiz Question & Answers**
+    - Within the quiz window the user will be able to locate a question followed by 4 answers relating to the question above. Both the question and the answers will inherit the same color pallet as the rest of the website. This shall keep up the consistency of the website as it shall not take the user away from the immersion of the quiz. 
+    - Upon hovering over the answers, the background of the answer in question will change color to a light blue until the user removes the cursor off of the answer. When selecting an answer, the background of answer will become a darker blue, thus indicating the answer has been selected, and shall remain dark blue unless the user indicates otherwise. 
+
+- **Submit Answer**
+    - Upon clicking the submit button, the computer will then check the selected answer against what has been documented as the correct answer. If correct, the user shall be awarded a point.
+
+- **Navigation Arrows**
+    - Underneath the quiz window, the user will be able to cycle through the questions using navigation arrows. The respective arrow will display either the question before or after the current question, depending on which arrows the user presses. 
+    - The navigation arrows shall have a color pallet of lime green. This is going against the color pallet of the website in order to draw attention to the user, and thus making them aware that they have the ability to utilise question navigation using these arrows. When the arrows are hovered over, they will display a background color of a darker green, this indicating to the user that they are prompted to click. 
