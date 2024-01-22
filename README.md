@@ -2,15 +2,6 @@
 
 Welcome to the Star Spangled Quiz, a quiz surrounding American History from modern day America, right through to the 18th Century. 
 
-## Deployment 
-
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://cameronjamesw.github.io/american-history-quiz
-
 ## Introduction
 
 ### A Brief Overview
@@ -108,8 +99,9 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 - The form allows for the user to sign up to the website in order to access the quiz, if the user has signed up before then they will be able to log-in to their existing account. 
     - Through clicking the 'sign-in' or 'sign-up' buttons located at the bottom of the form, the user will be able to toggle through both sign-in methods. The toggle button hides certain elements of the form corresponding to the option they have selected - clicking 'sign-in' will hide the 'confirm password' field as there is no need for an existing user to confirm an already created password.
     - The user will notice that the placeholder text will also change between both options, switching 'create username/password' to 'enter username/password' respectively.
+- Before the user can successfully submit the form, a process of form validation will be executed whereby the username and password will bechecked against certain criteria. When signing up, the username will need to be at least 6 characters  in length and must contain a number. This is the same criteria for the password field too; however, the computer will check to see if both passwords match upon submission. If any of this criteria is not met, then an error message will appear within the form instructing the user to alter the respective field. 
 - Upon successfully submitting the form, the user's details shall be logged to the console.
-- If the user does not feel a need to log-in or sign-up, then they can select 'continue as a guest' which acts as a way of bypassing the form without having to submit it. 
+- If the user does not feel a need to log-in or sign-up, then they can select 'continue as a guest' which acts as a way of bypassing the form without having to submit it.
 
 ### Select Difficulty Window
 
