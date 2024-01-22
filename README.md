@@ -128,7 +128,7 @@ No. | Feature | Test Case | Outcome | Screenshtot
 7 | Form Validation #4 | Enter Short Password | DIsplays Relevent Error Msg | ![Screenshot of passsword too short error message](assets/images/form-table-ss/password-length-screenshot.png)
 8 | Form Validation #5 | Enter Password Without Number | Displays Relevent Error Msg | ![Screenshot of password must contain number error message](assets/images/form-table-ss/password-number-screenshot.png)
 9 | Submit Form | Click Submit | Submits form, displays difficulty window | ![Screenshot of click submit form outcome](assets/images/form-table-ss/hide-form-screenshot.png)
-10 | Continue As Guest | Click Continue As Guest | Hides form without submitting, displays difficulty window ![Screenshot of continue as guest clikc outcome](assets/images/form-table-ss/hide-form-screenshot.png)
+10 | Continue As Guest | Click Continue As Guest | Hides form without submitting, displays difficulty window | ![Screenshot of continue as guest clikc outcome](assets/images/form-table-ss/hide-form-screenshot.png)
 
 
 ### Browser Compatiblity
