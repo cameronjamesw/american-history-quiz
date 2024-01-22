@@ -292,6 +292,12 @@ form .active:hover {
     border-radius: 30px;
 }
 
+.answerText:hover {
+    border: 2px #f00 solid;
+    color: #f00;
+    cursor: pointer;
+}
+
 .answerText>p {
     font-size: 1.5em;
     padding: 20px;
@@ -313,6 +319,23 @@ form .active:hover {
     background-color: #000;
     text-align: center;
     width: fit-content;
+}
+
+#checkAnswerBtn>p:hover {
+    border: #000080 2px solid;
+    cursor: pointer;
+}
+
+.selectAnswer {
+    margin: 20px;
+    background-color: #000;
+    border: #000080 2px solid;
+    border-radius: 30px;
+}
+
+.selectAnswer:hover {
+    cursor: pointer;
+    border: #000080 2px solid;
 }
 
 /* Media Query for Tablets and higher (768px and higher) */
