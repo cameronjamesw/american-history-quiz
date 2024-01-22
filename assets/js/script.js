@@ -30,7 +30,7 @@ function showSignup(){
     title.innerHTML = 'Sign-Up';
     signupBtn.classList.add('active');
     signinBtn.classList.remove('active');
-    passwordConfirmedField.style.maxHeight = '60px';
+    passwordConfirmedField.style.maxHeight = '80px';
     passwordConfirmedField.style.paddingBottom = '20px';
     passwordConfirmedField.style.paddingTop = '20px';
     passwordField.setAttribute('placeholder', 'Create Password');

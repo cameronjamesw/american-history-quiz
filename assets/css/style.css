@@ -179,7 +179,7 @@ form button:hover {
 }
 
 #confirm-password {
-    max-height: 60px;
+    max-height: 80px;
     overflow: hidden;
     transition: maxheight 0.5s;
     transition: padding 0.5s;
