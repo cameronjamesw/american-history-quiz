@@ -117,9 +117,9 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 **Form Testing**
 
-No. | Feature | Test Case | Outcome
---- | --- | --- | ---
-1 | Hover Form Input | Hover over Input | Border changes color
+No. | Feature | Test Case | Outcome | Screenshtot
+--- | --- | --- | --- | ---
+1 | Hover Form Input | Hover over Input | Border changes color | ![Screenshot of hovering over a form input](assets/images/form-table-ss/hover-screenshot.png)
 2 | Sign-In Toggle Button | Click Sign-In | Reveals Sign-In Window, hides Confirm Password field
 3 | Sign-Up Toggle Button | Click Sign-Up | Reveals Sign-Up Window, displays Confirm Password field
 4 | Form Validation #1 | Enter Short Username | Displays Relevent Error Msg
