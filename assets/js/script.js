@@ -228,14 +228,18 @@ hardBtn.addEventListener('mouseout', hardOut);
 
 // This section adds functionality to the quiz window
 
+let answers = document.getElementsByClassName('answerText');
+console.log(answers[0])
 
 
 // This section adds event listeners to the difficulty menu 
 
 function clickEasy() {
     hideDifficulty();
+    showQuestionWindow();
 };
-// This section refers to hiding the difficulty menu
+
+easyBtn.addEventListener('click', clickEasy)
 
 /**
  * This function hide the difficulty menu
@@ -244,4 +248,10 @@ function hideDifficulty(){
     let difficultyDiv = document.getElementById('difficultyDiv');
     difficultyDiv.style.maxHeight = '0';
     difficultyDiv.style.transitionDelay = '2s';
+};
+
+function showQuestionWindow() {
+    let questionWindow = document.getElementById('questionWindow');
+    questionWindow.style.maxHeight = '1000px';
+    questionWindow.style.transitionDelay = '2s';
 };
