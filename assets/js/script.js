@@ -114,6 +114,7 @@ function hideForm(){
 function showDifficulty(){
     let difficultyDiv = document.getElementById('difficultyDiv');
     difficultyDiv.style.maxHeight = '1000px';
+    difficultyDiv.style.transitionDelay = '2s';
 };
 
 // Come back to this code later
@@ -224,3 +225,14 @@ function hardOut(event){
 let hardBtn = document.getElementById('hardBtn');
 hardBtn.addEventListener('mouseover', hardHover);
 hardBtn.addEventListener('mouseout', hardOut);
+
+// This section refers to hiding the difficulty menu
+
+/**
+ * This function hide the difficulty menu
+ */
+function hideDifficulty(){
+    let difficultyDiv = document.getElementById('difficultyDiv');
+    difficultyDiv.style.maxHeight = '0';
+    difficultyDiv.style.transitionDelay = '2s';
+};
