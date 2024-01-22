@@ -226,6 +226,15 @@ let hardBtn = document.getElementById('hardBtn');
 hardBtn.addEventListener('mouseover', hardHover);
 hardBtn.addEventListener('mouseout', hardOut);
 
+// This section adds functionality to the quiz window
+
+
+
+// This section adds event listeners to the difficulty menu 
+
+function clickEasy() {
+    hideDifficulty();
+};
 // This section refers to hiding the difficulty menu
 
 /**
