@@ -120,8 +120,8 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 No. | Feature | Test Case | Outcome | Screenshtot
 --- | --- | --- | --- | ---
 1 | Hover Form Input | Hover over Input | Border changes color | ![Screenshot of hovering over a form input](assets/images/form-table-ss/hover-screenshot.png)
-2 | Sign-In Toggle Button | Click Sign-In | Reveals Sign-In Window, hides Confirm Password field
-3 | Sign-Up Toggle Button | Click Sign-Up | Reveals Sign-Up Window, displays Confirm Password field
+2 | Sign-In Toggle Button | Click Sign-In | Reveals Sign-In Window, hides Confirm Password field | ![Scrrenshot of clicking the sign-in button](assets/images/form-table-ss/login-screenshot.png)
+3 | Sign-Up Toggle Button | Click Sign-Up | Reveals Sign-Up Window, displays Confirm Password field | ![Screenshot of clicking the sign-up button](assets/images/form-table-ss/signup-screenshot.png)
 4 | Form Validation #1 | Enter Short Username | Displays Relevent Error Msg
 5 | Form Validation #2 | Enter Username without Number | Displays Relevent Error Msg
 6 | Form Validation #3 | Enter Different Passwords | Displays Relevent Error Msg
