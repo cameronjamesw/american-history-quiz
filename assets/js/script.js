@@ -85,8 +85,8 @@ function handleSubmit(event) {
         passErrorMsg.innerHTML = '';
         userErrorMsg.innerHTML = '';
         form.submit();
-        hideForm();
         showDifficulty();
+        hideForm();
     }
 }
 
@@ -103,7 +103,9 @@ form.addEventListener('submit', handleSubmit);
  * This function hides the form
  */
 function hideForm(){
-    form.style.display = ('none');
+    event.preventDefault();
+    form.style.maxHeight = ('0');
+    showDifficulty();
 }
 
 /**
@@ -111,7 +113,7 @@ function hideForm(){
  */
 function showDifficulty(){
     let difficultyDiv = document.getElementById('difficultyDiv');
-    difficultyDiv.style.maxHeight = '800px';
+    difficultyDiv.style.maxHeight = '1000px';
 };
 
 // Come back to this code later

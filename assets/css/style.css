@@ -76,10 +76,12 @@ footer {
 /* This is the styles for the form */
 
 #form {
-    border: solid #fff 2px;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0 20px 50px;
     border-radius: 10px;
+    max-height: 1000px;
+    transition: max-height 1.5s;
+    overflow: hidden;
 }
 
 #form input {
@@ -152,6 +154,11 @@ form #submitBtns {
 form #guestBtn {
     align-content: center;
     margin-right: 20px;
+}
+
+form #guestBtn:hover {
+    color: #f00;
+    cursor: pointer;
 }
 
 form button {
@@ -228,10 +235,10 @@ form .active:hover {
     justify-content: center;
     align-content: center;
     margin: 20px 50px;
-    /* max-height: 0px;
+    max-height: 0px;
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: max-height 0.5s; */
+    transition: max-height 1.5s;
 }
 
 #difficultyDiv div {
