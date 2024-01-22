@@ -346,7 +346,7 @@ form .active:hover {
         margin-right: 150px;
     }
 
-    .toggle-button {
+    #formHeading {
         font-size: 2em;
     }
 
@@ -453,7 +453,7 @@ form .active:hover {
         justify-content: center;
     }
 
-    .toggle-button {
+    #formHeading {
         font-size: 3em;
     }
 
