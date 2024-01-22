@@ -119,16 +119,16 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 Feature | Test Case | Outcome
 --- | --- | ---
-Hover Form Input | Hover over Input | Border changes color
-Sign-In Toggle Button | Click Sign-In | Reveals Sign-In Window, hides Confirm Password field
-Sign-Up Toggle Button | Click Sign-Up | Reveals Sign-Up Window, displays Confirm Password field
-Form Validation #1 | Enter Short Username | Displays Relevent Error Msg
-Form Validation #2 | Enter Username without Number | Displays Relevent Error Msg
-Form Validation #3 | Enter Different Passwords | Displays Relevent Error Msg
-Form Validation #4 | Enter Short Password | DIsplays Relevent Error Msg
-Form Validation #5 | Enter Password Without Number | Displays Relevent Error Msg
-Submit Form | Click Submit | Submits form, displays difficulty window
-Continue As Guest | Click Continue As Guest | Hides form without submitting, displays difficulty window
+No. | Hover Form Input | Hover over Input | Border changes color
+1. | Sign-In Toggle Button | Click Sign-In | Reveals Sign-In Window, hides Confirm Password field
+1. | Sign-Up Toggle Button | Click Sign-Up | Reveals Sign-Up Window, displays Confirm Password field
+1. | Form Validation #1 | Enter Short Username | Displays Relevent Error Msg
+1. | Form Validation #2 | Enter Username without Number | Displays Relevent Error Msg
+1. | Form Validation #3 | Enter Different Passwords | Displays Relevent Error Msg
+1. | Form Validation #4 | Enter Short Password | DIsplays Relevent Error Msg
+1. | Form Validation #5 | Enter Password Without Number | Displays Relevent Error Msg
+1. | Submit Form | Click Submit | Submits form, displays difficulty window
+1. | Continue As Guest | Click Continue As Guest | Hides form without submitting, displays difficulty window
 
 
 ### Browser Compatiblity
