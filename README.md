@@ -113,6 +113,13 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ## Manual Testing
 
+Feature | Test Case | Outcome
+--- | --- | ---
+Header | Viewed | It looks nice
+Hover Form Input | Hover over Input | Border changes color
+Sign-In Toggle Button | Click Sign-In | Reveals Sign-In Window
+Sign-Up Toggle Button | Click Sign-Up | Reveals Sign-Up Window
+
 ### Features Testing
 
 ### Browser Compatiblity
