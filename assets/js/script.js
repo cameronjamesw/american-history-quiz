@@ -291,7 +291,7 @@ let easyQuestions = [
             {text: 'Titanic', correct: false},
             {text: 'HMS Agamemnon', correct: false}
         ]
-    }
+    },
     {
         question: 'How many stars are on the American Flag?',
         answer: [
