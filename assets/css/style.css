@@ -235,6 +235,8 @@ form .active:hover {
     justify-content: center;
     align-content: center;
     margin: 20px 50px;
+    position: relative;
+    bottom: 80px;
     max-height: 0px;
     overflow-x: hidden;
     overflow-y: hidden;
