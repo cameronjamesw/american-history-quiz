@@ -334,7 +334,7 @@ form .active:hover {
     cursor: pointer;
 }
 
-.correct {
+.correct, .correct:hover {
     border: #00c04b 2px solid;
     color: #00c04b;
 }
