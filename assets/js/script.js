@@ -269,15 +269,17 @@ function runEasyQuiz() {
 
 easyBtn.addEventListener('click', runEasyQuiz);
 
+
 nextQuestionBtn.addEventListener('click', () => {
     currentQuestionIndex++;
-    
     getNextQuestion();
 });
 
 function getNextQuestion(){
     resetState();
     getEasyQuestion(shuffledQuestions[currentQuestionIndex]);
+    let questionNumber = document.getElementById('questionNoText');
+    questionNumber.innerHTML = `<span class="white">Question ` + (parseInt(currentQuestionIndex) + 1) + ` of 5</span>`;
 };
 
 function getEasyQuestion(easyQuestions) {

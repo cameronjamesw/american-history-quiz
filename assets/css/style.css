@@ -271,7 +271,7 @@ form .active:hover {
     overflow: hidden;
 }
 
-#questionNoText>p {
+#questionNoText {
     color: #f00;
     padding: 30px 0 0 20px;
     text-decoration: underline;
@@ -408,7 +408,7 @@ form .active:hover {
         margin: 20px 50px;
     }
 
-    #questionNoText>p {
+    #questionNoText {
         padding: 30px 0 0 20px;
         text-underline-offset: 5px;
         text-decoration-thickness: 5px;
@@ -526,7 +526,7 @@ form .active:hover {
         margin: 20px 300px;
     }
 
-    #questionNoText>p {
+    #questionNoText {
         padding: 30px 0 0 20px;
         text-underline-offset: 5px;
         text-decoration-thickness: 5px;
