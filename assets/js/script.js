@@ -263,6 +263,7 @@ function showQuestionWindow() {
 
 // This section adds functionality to the quiz window
 
+let nextQuestionBtn = document.getElementById('nextQuestionBtn');
 let questionElement = document.getElementById('questionText');
 let answerDivElement = document.getElementById('answerDiv');
 let shuffledQuestions;
@@ -287,6 +288,7 @@ function getEasyQuestion(easyQuestions) {
 };
 
 function resetState(){
+    nextQuestionBtn.style.display = 'none';
     while (answerDivElement.firstChild){
         answerDivElement.removeChild(answerDivElement.firstChild);
     }
