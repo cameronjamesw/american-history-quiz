@@ -20,7 +20,8 @@ h6 {
 
 p,
 input,
-button {
+button,
+div {
     font-family: 'Roboto Condensed', 'sans-serif';
 }
 

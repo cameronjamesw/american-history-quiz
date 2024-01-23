@@ -269,6 +269,21 @@ let answerDivElement = document.getElementById('answerDiv');
 let shuffledQuestions;
 let currentQuestionIndex;
 
+/**
+ * This function hides the difficulty menu and reveals the easy quiz window
+ */
+function runEasyQuiz() {
+    hideDifficulty();
+    showQuestionWindow();
+    shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+};
+
+nextQuestionBtn.addEventListener('click', () => {
+    currentQuestionIndex++;
+    getNextQuestion();
+});
+
 function getNextQuestion(){
     resetState();
     getEasyQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -277,9 +292,9 @@ function getNextQuestion(){
 function getEasyQuestion(easyQuestions) {
     questionElement.innerHTML = easyQuestions.question;
     easyQuestions.answer.forEach(answer => {
-        let button = document.createElement('button');
+        let button = document.createElement('div');
         button.innerHTML = answer.text;
-        button.classList.add('btn');
+        button.classList.add('answerText');
         if (answer.correct){
             button.dataset.correct = answer.correct;
         } button.addEventListener('click', showAnswer);
@@ -294,12 +309,17 @@ function resetState(){
     }
 };
 
-function showAnswer(event){
-    let clickedButton = event.target;
+function showAnswer(e){
+    let clickedButton = e.target;
     let correct = clickedButton.dataset.correct;
     Array.from(answerDivElement.children).forEach(button => {
         setAnswerClass(button, button.dataset.correct)
-    })
+    });
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+         nextQuestionBtn.style.display = 'block';
+    } else {
+        showDifficulty()
+    };
 };
 
 function setAnswerClass(element, correct){
