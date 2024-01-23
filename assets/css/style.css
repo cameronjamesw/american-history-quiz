@@ -333,18 +333,14 @@ form .active:hover {
     cursor: pointer;
 }
 
-.selectAnswer {
-    margin: 20px;
-    background-color: #000;
-    border: #000080 2px solid;
-    color: #000080;
-    border-radius: 30px;
+.correct {
+    border: #00c04b 2px solid;
+    color: #00c04b;
 }
 
-.selectAnswer:hover {
-    cursor: pointer;
-    border: #000080 2px solid;
-    color: #000080;
+.wrong {
+    border: #f00 2px solid;
+    color: #f00;
 }
 
 /* Media Query for Tablets and higher (768px and higher) */
