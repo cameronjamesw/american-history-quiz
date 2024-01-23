@@ -344,6 +344,42 @@ form .active:hover {
     color: #f00;
 }
 
+/* This section refers to the results window */
+
+#resultsDiv {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 30px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#resultsText {
+    color: #fff;
+    background-color: #000;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+.resetBtn {
+        color: #fff;
+        border: #f00 2px solid;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 20px;
+        font-size: 1.5em;
+        margin: 20px 100px;
+        background-color: #000;
+        text-align: center;
+        justify-content: center;
+}
+
 /* Media Query for Tablets and higher (768px and higher) */
 
 @media screen and (min-width: 768px) {
