@@ -311,12 +311,12 @@ form .active:hover {
     text-align: center;
 }
 
-#checkAnswerBtn {
+#nextQuestionDiv {
     display: flex;
     justify-content: center;
 }
 
-#checkAnswerBtn>p {
+#nextQuestionBtn {
     border: #f00 2px solid;
     font-weight: bold;
     padding: 15px;
@@ -328,7 +328,7 @@ form .active:hover {
     width: fit-content;
 }
 
-#checkAnswerBtn>p:hover {
+#nextQuestionBtn:hover {
     border: #000080 2px solid;
     cursor: pointer;
 }
@@ -438,12 +438,12 @@ form .active:hover {
         padding: 20px;
     }
 
-    #checkAnswerBtn {
+    #nextQuestionDiv {
         display: flex;
         justify-content: center;
     }
 
-    #checkAnswerBtn>p {
+    #nextQuestionBtn {
         padding: 15px;
         font-size: 2em;
         margin: 0 30px 20px 30px;
@@ -563,12 +563,12 @@ form .active:hover {
         padding: 30px;
     }
 
-    #checkAnswerBtn {
+    #nextQuestionDiv {
         display: flex;
         justify-content: center;
     }
 
-    #checkAnswerBtn>p {
+    #nextQuestionBtn {
         padding: 15px;
         font-size: 2em;
         margin: 0 30px 20px 30px;
