@@ -231,12 +231,14 @@ hardBtn.addEventListener('mouseout', hardOut);
 /**
  * This function hides the difficulty menu and reveals the easy quiz window
  */
-function clickEasy() {
+function runEasyQuiz() {
     hideDifficulty();
     showQuestionWindow();
+    shuffleQuestionIndex = easyQuestions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
 };
 
-easyBtn.addEventListener('click', clickEasy)
+easyBtn.addEventListener('click', runEasyQuiz)
 
 /**
  * This function hides the difficulty menu by setting the max-height
@@ -261,8 +263,40 @@ function showQuestionWindow() {
 
 // This section adds functionality to the quiz window
 
-// This section refers to the questions array
+let questionElement = document.getElementById('questionText');
+let answerDivElement = document.getElementById('answerDiv');
+let shuffledQuestions;
+let currentQuestionIndex;
 
+function getNextQuestion(){
+    resetState();
+    getEasyQuestion(shuffledQuestions[currentQuestionIndex]);
+};
+
+function getEasyQuestion(easyQuestions) {
+    questionElement.innerHTML = easyQuestions.question;
+    easyQuestions.answer.forEach(answer => {
+        let button = document.createElement('button');
+        button.innerHTML = answer.text;
+        button.classList.add('btn');
+        if (answer.correct){
+            button.dataset.correct = answer.correct;
+        } button.addEventListener('click', showAnswer);
+        answerDivElement.appendChild(button);
+    })
+};
+
+function resetState(){
+    while (answerDivElement.firstChild){
+        answerDivElement.removeChild(answerDivElement.firstChild);
+    }
+};
+
+function showAnswer(e){
+
+};
+
+// This section refers to the questions array
 // These are the easy questions
 let easyQuestions = [
     {

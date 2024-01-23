@@ -278,13 +278,13 @@ form .active:hover {
     text-decoration-thickness: 3px;
 }
 
-#questionText {
+#questionDiv {
     border: #f00 2px solid;
     border-radius: 10px;
     margin: 20px;
 }
 
-#questionText>h3 {
+#questionText {
     text-align: left;
     border: #fff 2px solid;
     border-radius: 10px;
@@ -305,7 +305,7 @@ form .active:hover {
     cursor: pointer;
 }
 
-.answerText>p {
+.answerText {
     font-size: 1.5em;
     padding: 20px;
     text-align: center;
@@ -418,11 +418,11 @@ form .active:hover {
         font-size: 2em;
     }
 
-    #questionText {
+    #questionDiv {
         margin: 20px;
     }
 
-    #questionText>h3 {
+    #questionText {
         text-align: left;
         padding: 10px;
         font-size: 2em;
@@ -433,7 +433,7 @@ form .active:hover {
         margin: 20px;
     }
 
-    .answerText>p {
+    .answerText {
         font-size: 2em;
         padding: 20px;
     }
@@ -536,11 +536,11 @@ form .active:hover {
         font-size: 2em;
     }
 
-    #questionText {
+    #questionDiv {
         margin: 20px;
     }
 
-    #questionText>h3 {
+    #questionText {
         text-align: left;
         padding: 10px;
         font-size: 3em;
@@ -558,7 +558,7 @@ form .active:hover {
         flex: 1 0 auto;
     }
 
-    .answerText>p {
+    .answerText {
         font-size: 3em;
         padding: 30px;
     }
