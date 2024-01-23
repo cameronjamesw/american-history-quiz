@@ -483,6 +483,25 @@ form .active:hover {
         text-align: center;
         width: fit-content;
     }
+
+    /* This section refers to the results window */
+
+#resultsDiv {
+    margin: 30px 80px;
+    border-radius: 10px;
+}
+
+#resultsText {
+    font-size: 3.5rem;
+    padding: 30px;
+    margin: 30px;
+}
+
+.resetBtn {
+        padding: 15px;
+        font-size: 2.5em;
+        margin: 20px 150px;
+}
 }
 
 /* Medis query for laptops and higher (1024px sand higher) */
@@ -608,4 +627,23 @@ form .active:hover {
         text-align: center;
         width: fit-content;
     }
+
+        /* This section refers to the results window */
+
+#resultsDiv {
+    margin: 30px 150px;
+    border-radius: 10px;
+}
+
+#resultsText {
+    font-size: 4.5rem;
+    padding: 30px;
+    margin: 50px;
+}
+
+.resetBtn {
+        padding: 15px;
+        font-size: 3em;
+        margin: 50px 350px;
+}
 }
