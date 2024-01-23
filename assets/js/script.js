@@ -247,7 +247,7 @@ easyBtn.addEventListener('click', clickEasy)
 function hideDifficulty(){
     let difficultyDiv = document.getElementById('difficultyDiv');
     difficultyDiv.style.maxHeight = '0';
-    difficultyDiv.style.transitionDelay = '2s';
+    difficultyDiv.style.transitionDelay = '0s';
 };
 
 function showQuestionWindow() {
