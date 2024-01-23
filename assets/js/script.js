@@ -325,7 +325,6 @@ function showResultsWindow() {
     let questionWindow = document.getElementById('questionWindow');
     questionWindow.style.maxHeight = '0';
     questionWindow.style.transitionDelay = '0s';
-
     let resultsWindow = document.getElementById('resultsDiv');
     resultsWindow.style.maxHeight ='1000px';
     resultsWindow.style.transitionDelay = '2s';
