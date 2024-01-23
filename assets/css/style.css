@@ -337,12 +337,14 @@ form .active:hover {
     margin: 20px;
     background-color: #000;
     border: #000080 2px solid;
+    color: #000080;
     border-radius: 30px;
 }
 
 .selectAnswer:hover {
     cursor: pointer;
     border: #000080 2px solid;
+    color: #000080;
 }
 
 /* Media Query for Tablets and higher (768px and higher) */

@@ -261,5 +261,153 @@ function showQuestionWindow() {
 
 // This section adds functionality to the quiz window
 
-let answers = document.getElementsByClassName('answerText');
-console.log(answers[0])
+// This section refers to the questions array
+
+// These are the easy questions
+let easyQuestions = [
+    {
+        question: 'Who was the first President of the United States of America?',
+        answer: [
+            {text: 'John Adams', correct: false},
+            {text: 'George Washington', correct: true},
+            {text: 'Benedict Arnold', correct: false},
+            {text: 'Donald Trump', correct: false}
+        ]
+    },
+    {
+        question: 'In what year did the War of Independence begin?',
+        answer: [
+            {text: '1861', correct: false},
+            {text: '1929', correct: false},
+            {text: '1766', correct: false},
+            {text: '1776', correct: true}
+        ]
+    },
+    {
+        question: 'What was the name of the ship the Pilgrims sailed on?',
+        answer: [
+            {text: 'The Mayflower', correct: true},
+            {text: 'The George Washington', correct: false},
+            {text: 'Titanic', correct: false},
+            {text: 'HMS Agamemnon', correct: false}
+        ]
+    }
+    {
+        question: 'How many stars are on the American Flag?',
+        answer: [
+            {text: '13', correct: false},
+            {text: '100', correct: false},
+            {text: '50', correct: true},
+            {text: '55', correct: false}
+        ]
+    },
+    {
+        question: 'How many Presidents have the US had as of 2023?',
+        answer: [
+            {text: '40', correct: false},
+            {text: '50', correct: false},
+            {text: '20', correct: false},
+            {text: '46', correct: true}
+        ]
+    }
+];
+
+// These are the medium questions
+
+let medQuestions = [
+    {
+        question: 'How many US Presidents have been assassinated?',
+        answer: [
+            {text: '4', correct: true},
+            {text: 'none', correct: false},
+            {text: '5', correct: false},
+            {text: '7', correct: false}
+        ]
+    },
+    {
+        question: 'Which US state has a famous link to the Battle of the Alamo?',
+        answer: [
+            {text: 'Michigan', correct: false},
+            {text: 'Texas', correct: true},
+            {text: 'Florida', correct: false},
+            {text: 'New Mexcio', correct: false}
+       ]
+    },
+    {
+        question: 'The American Civil War was fought between which groups?',
+        answer: [
+            {text: 'Great Britain & America', correct: false},
+            {text: 'Democrats & Republicans', correct: false},
+            {text: 'Communists & Capitalists', correct: false},
+            {text: 'Union & Confederacy', correct: true}
+        ]
+    },
+    {
+        question: 'In total, how many people were killed in the Salem Witch Trials?',
+        answer: [
+            {text: '20', correct: false},
+            {text: '24', correct: false},
+            {text: '22', correct: false},
+            {text: '25', correct: true}
+        ]
+    },
+    {
+        question: 'Which state of America has the biggest land mass?',
+        answer: [
+            {text: 'Alaska', correct: true},
+            {text: 'Califronia', correct: false},
+            {text: 'Florida', correct: false},
+            {text: 'Massachusetts', correct: false}
+        ]
+    }
+];
+
+// These are the hard questions
+
+let hardQuestion = [
+    {
+        question: 'Who was the first President to live in the White House?',
+        answer: [
+            {text: 'George Washington', correct: false},
+            {text: 'John Adams', correct: true},
+            {text: 'Thomas Jefferson', correct: false},
+            {text: 'James Madison', correct: false}
+        ]
+    },
+    {
+        question: '"Speak softly and carry a big stick" was a famous saying of which President?',
+        answer: [
+            {text: 'Franklin Roosevelt', correct: false},
+            {text: 'Dwight Eisenhower', correct: false},
+            {text: 'Theodore Roosevelt', correct: true},
+            {text: 'Abraham Lincoln', correct: false}
+        ]
+    },
+    {
+        question: 'What is the capital city of Wyoming?',
+        answer: [
+            {text: 'Chyenne', correct: true},
+            {text: 'Baton Rouge', correct: false},
+            {text: 'Talahasee', correct: false},
+            {text: 'Casper', correct: false}
+        ]
+    },
+    {
+        question: 'What was the name of the oil rig that exploded in the Gulf of Mexico in 2010?',
+        answer: [
+            {text: 'Magnolia', correct: false},
+            {text: 'Mad Dog', correct: false},
+            {text: 'Petronius', correct: false},
+            {text: 'Deepwater Horizon', correct: true}
+        ]
+    },
+    {
+        question: 'Known as one of the Founding Fathers of the United States, this man was born in Boston in 1706',
+        answer: [
+            {text: 'Alexander Hamilton', correct: false},
+            {text: 'Benjamin Franklin', correct: true},
+            {text: 'Patrick Henry', correct: false},
+            {text: 'Thomas Jefferson', correct: false}
+        ]
+    }
+];
