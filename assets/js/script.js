@@ -294,8 +294,26 @@ function resetState(){
     }
 };
 
-function showAnswer(e){
+function showAnswer(event){
+    let clickedButton = event.target;
+    let correct = clickedButton.dataset.correct;
+    Array.from(answerDivElement.children).forEach(button => {
+        setAnswerClass(button, button.dataset.correct)
+    })
+};
 
+function setAnswerClass(element, correct){
+    clearAnswerClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
+    }
+};
+
+function clearAnswerClass(element){
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 };
 
 // This section refers to the questions array
