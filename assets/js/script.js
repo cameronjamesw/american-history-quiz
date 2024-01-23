@@ -318,14 +318,14 @@ function showAnswer(e){
 
 function hideQustionWindow() {
     let questionWindow = document.getElementById('questionWindow');
-    questionWindow.style.maxHeight('0');
-    questionWindow.style.transitionDelay('0s');
+    questionWindow.style.maxHeight = '0';
+    questionWindow.style.transitionDelay = '0s';
 };
 
 function showResultsWindow() {
     let resultsWindow = document.getElementById('resultsDiv');
-    resultsWindow.style.maxHeight('1000px');
-    resultsWindow.style.transitionDelay('2s');
+    resultsWindow.style.maxHeight ='1000px';
+    resultsWindow.style.transitionDelay = '2s';
 };
 
 function setAnswerClass(element, correct){
