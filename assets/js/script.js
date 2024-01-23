@@ -90,7 +90,6 @@ function handleSubmit(event) {
     }
 }
 
-
 let guest = document.getElementById('guestBtn');
 guest.addEventListener('click', hideForm);
 
@@ -229,18 +228,6 @@ hardBtn.addEventListener('mouseout', hardOut);
 // This section adds event listeners to the difficulty menu 
 
 /**
- * This function hides the difficulty menu and reveals the easy quiz window
- */
-function runEasyQuiz() {
-    hideDifficulty();
-    showQuestionWindow();
-    shuffleQuestionIndex = easyQuestions.sort(() => Math.random() - .5);
-    currentQuestionIndex = 0;
-};
-
-easyBtn.addEventListener('click', runEasyQuiz)
-
-/**
  * This function hides the difficulty menu by setting the max-height
  * to 0px, this also removes the transition delay
  */
@@ -277,10 +264,14 @@ function runEasyQuiz() {
     showQuestionWindow();
     shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
+    getNextQuestion();
 };
+
+easyBtn.addEventListener('click', runEasyQuiz);
 
 nextQuestionBtn.addEventListener('click', () => {
     currentQuestionIndex++;
+    
     getNextQuestion();
 });
 
@@ -306,7 +297,7 @@ function resetState(){
     nextQuestionBtn.style.display = 'none';
     while (answerDivElement.firstChild){
         answerDivElement.removeChild(answerDivElement.firstChild);
-    }
+    };
 };
 
 function showAnswer(e){
@@ -338,7 +329,7 @@ function clearAnswerClass(element){
 
 // This section refers to the questions array
 // These are the easy questions
-let easyQuestions = [
+const easyQuestions = [
     {
         question: 'Who was the first President of the United States of America?',
         answer: [
@@ -388,7 +379,7 @@ let easyQuestions = [
 
 // These are the medium questions
 
-let medQuestions = [
+const medQuestions = [
     {
         question: 'How many US Presidents have been assassinated?',
         answer: [
@@ -438,7 +429,7 @@ let medQuestions = [
 
 // These are the hard questions
 
-let hardQuestion = [
+const hardQuestion = [
     {
         question: 'Who was the first President to live in the White House?',
         answer: [
