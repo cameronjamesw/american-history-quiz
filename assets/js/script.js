@@ -311,18 +311,21 @@ function showAnswer(e){
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
          nextQuestionBtn.style.display = 'block';
     } else {
-        hideQustionWindow();
-        showResultsWindow();
+        let seeResultsBtn = document.createElement('p');
+        let nextQuestionDiv = document.getElementById('nextQuestionDiv');
+        nextQuestionDiv.appendChild(seeResultsBtn);
+        seeResultsBtn.classList.add('seeResultsBtn');
+        seeResultsBtn.innerHTML = 'See Results';
+        seeResultsBtn.style.cursor = 'pointer';
+        seeResultsBtn.addEventListener('click', showResultsWindow);
     };
 };
 
-function hideQustionWindow() {
+function showResultsWindow() {
     let questionWindow = document.getElementById('questionWindow');
     questionWindow.style.maxHeight = '0';
     questionWindow.style.transitionDelay = '0s';
-};
 
-function showResultsWindow() {
     let resultsWindow = document.getElementById('resultsDiv');
     resultsWindow.style.maxHeight ='1000px';
     resultsWindow.style.transitionDelay = '2s';

@@ -344,6 +344,22 @@ form .active:hover {
     color: #f00;
 }
 
+.seeResultsBtn {
+    border: #f00 2px solid;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    margin: 0 30px 20px 30px;
+    background-color: #000;
+    text-align: center;
+    width: fit-content;
+}
+
+.seeResultsBtn:hover {
+    border: #000080 2px solid;
+}
+
 /* This section refers to the results window */
 
 #resultsDiv {
