@@ -226,14 +226,11 @@ let hardBtn = document.getElementById('hardBtn');
 hardBtn.addEventListener('mouseover', hardHover);
 hardBtn.addEventListener('mouseout', hardOut);
 
-// This section adds functionality to the quiz window
-
-let answers = document.getElementsByClassName('answerText');
-console.log(answers[0])
-
-
 // This section adds event listeners to the difficulty menu 
 
+/**
+ * This function hides the difficulty menu and reveals the easy quiz window
+ */
 function clickEasy() {
     hideDifficulty();
     showQuestionWindow();
@@ -242,7 +239,8 @@ function clickEasy() {
 easyBtn.addEventListener('click', clickEasy)
 
 /**
- * This function hide the difficulty menu
+ * This function hides the difficulty menu by setting the max-height
+ * to 0px, this also removes the transition delay
  */
 function hideDifficulty(){
     let difficultyDiv = document.getElementById('difficultyDiv');
@@ -250,8 +248,18 @@ function hideDifficulty(){
     difficultyDiv.style.transitionDelay = '0s';
 };
 
+/**
+ * This function reveals the quiz window by setting the max-height
+ * property to 1000px
+ */
 function showQuestionWindow() {
     let questionWindow = document.getElementById('questionWindow');
     questionWindow.style.maxHeight = '1000px';
     questionWindow.style.transitionDelay = '2s';
 };
+
+
+// This section adds functionality to the quiz window
+
+let answers = document.getElementsByClassName('answerText');
+console.log(answers[0])
