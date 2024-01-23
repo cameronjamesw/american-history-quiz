@@ -247,7 +247,7 @@ form .active:hover {
     color: #fff;
     background-color: #000;
     text-align: center;
-    margin: 50px 50px;
+    margin: 20px 50px 50px;
     border-radius: 30px;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -260,7 +260,9 @@ form .active:hover {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    margin: 20px 50px;
+    margin: 0 50px;
+    position: relative;
+    bottom: 100px;
     max-height: 0px;
     transition: max-height 2s;
     overflow: hidden;
