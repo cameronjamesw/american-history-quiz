@@ -311,8 +311,21 @@ function showAnswer(e){
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
          nextQuestionBtn.style.display = 'block';
     } else {
-        showDifficulty()
+        hideQustionWindow();
+        showResultsWindow();
     };
+};
+
+function hideQustionWindow() {
+    let questionWindow = document.getElementById('questionWindow');
+    questionWindow.style.maxHeight('0');
+    questionWindow.style.transitionDelay('0s');
+};
+
+function showResultsWindow() {
+    let resultsWindow = document.getElementById('resultsDiv');
+    resultsWindow.style.maxHeight('1000px');
+    resultsWindow.style.transitionDelay('2s');
 };
 
 function setAnswerClass(element, correct){
