@@ -259,30 +259,31 @@ let currentQuestionIndex;
 /**
  * This function hides the difficulty menu and reveals the easy quiz window
  */
-function runEasyQuiz() {
+
+function runQuiz() {
     hideDifficulty();
     showQuestionWindow();
     shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
-    getNextQuestion();
+    getQuestion();
 };
 
-easyBtn.addEventListener('click', runEasyQuiz);
+easyBtn.addEventListener('click', runQuiz);
 
 
 nextQuestionBtn.addEventListener('click', () => {
     currentQuestionIndex++;
-    getNextQuestion();
+    getQuestion();
 });
 
-function getNextQuestion(){
+function getQuestion(){
     resetState();
-    getEasyQuestion(shuffledQuestions[currentQuestionIndex]);
+    getNextQuestion(shuffledQuestions[currentQuestionIndex]);
     let questionNumber = document.getElementById('questionNoText');
     questionNumber.innerHTML = `<span class="white">Question ` + (parseInt(currentQuestionIndex) + 1) + ` of 5</span>`;
 };
 
-function getEasyQuestion(easyQuestions) {
+function getNextQuestion(easyQuestions) {
     questionElement.innerHTML = easyQuestions.question;
     easyQuestions.answer.forEach(answer => {
         let button = document.createElement('div');
@@ -344,8 +345,29 @@ function clearAnswerClass(element){
     element.classList.remove('wrong');
 };
 
+// This section refers to the Results Window 
+/*
+let resultsText = document.getElementById('resultsText');
+if (totalScore <= 2) {
+    resultsText.innerHTML = `<p>Good Try! You scored ` + parseInt(totalScore) + ` of out 5!</p>`
+} else {
+    resultsText.innerHTML = `<p>Congratulations! You scored ` + parseInt(totalScore) + ` of out 5!</p>`
+};
+*/
 // This section refers to the questions array
 // These are the easy questions
+
+
+// Medium Quiz 
+
+/**
+ * This function hides the difficulty menu and reveals the easy quiz window
+ */
+
+/**
+ * This function hides the difficulty menu and reveals the easy quiz window
+ */
+
 const easyQuestions = [
     {
         question: 'Who was the first President of the United States of America?',
@@ -391,12 +413,7 @@ const easyQuestions = [
             {text: '20', correct: false},
             {text: '46', correct: true}
         ]
-    }
-];
-
-// These are the medium questions
-
-const medQuestions = [
+    },
     {
         question: 'How many US Presidents have been assassinated?',
         answer: [
@@ -441,12 +458,7 @@ const medQuestions = [
             {text: 'Florida', correct: false},
             {text: 'Massachusetts', correct: false}
         ]
-    }
-];
-
-// These are the hard questions
-
-const hardQuestion = [
+    },
     {
         question: 'Who was the first President to live in the White House?',
         answer: [
