@@ -105,11 +105,38 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ### Begin Quiz Window
 
-![A screenshot of the difficulty window that is featured on the website](assets/images/features-ss/begin-quiz-ss.png)
+![A screenshot of the begin quiz window that is featured on the website](assets/images/features-ss/begin-quiz-ss.png)
 
 - Here is a screenshot of what the user can expect to see upon bypassing the form. A formerly hidden begin quiz window will be revealed to the user and this will allow the user to access the quiz.
 - Upon hovering over the begin quiz button, the background color of the box will change from white to red, this enhancing the users experience with the website as this illustrates interactivity to the user.
 - Once the user has pressed the button, the quiz window will then be displayed to the user in readiness for them to start the quiz.
+
+### Quiz Window 
+
+- **Upon Loading**
+
+![A screenshot of the quiz window that the user can expect to see upon clicking the begin wuiz button.](assets/images/features-ss/display-question-ss.png)
+
+- Here is a screenshot of what the user can expect to see upon pressing the begin quiz button. The quiz window will be revealed to the user in a neat transition opening from the top down. The user will see a quiz window containing a question number and a question followed by four answers.
+- The aesthetic of the quiz window follows the color pallet that has been set by the rest of the website. When hovering over an answer, the answer box's border color will change to red and the curser will change to a pointer, implying for the user to click the answer which they think it correct `screenshot below`. When moving the mouse cursor out of the answer box, the border color will change back to white, the default color.
+- There is an array of 15 questions for the user to answer, with the order of questions being changed each time a user takes the quiz. 
+
+![A screenshot showing an answer being hovered](assets/images/features-ss/hover-answer-ss.png)
+
+- **Selecting An Answer**
+
+![A screenshot showing an answer being selected](assets/images/features-ss/select-answer-ss.png)
+
+- When the user selects an answer they will notice that the color of the answers will change to reflect their status as correct or incorrect. Answers that are correct with adopt a green color with green border, and incorrect answers will adopt a red color with red border.
+- When the user selects an answer, the 'next question' button shall be revealed at the bottom of the quiz window, this allows the user to move to the next question `screenshot below`. The 'next question' button has a solid red border, and when hovering the color of the border will change to blue, indicating to the user that this is a button. This contrasts the current precedent set by the color pallet in order to draw attention to it within the quiz window.
+
+![A screenshot showing the next question button being hovered over](assets/images/features-ss/hover-next-question-ss.png)
+
+- **Incrementing Question Number**
+
+![A screenshot of the question number incrementing](assets/images/features-ss/increment-question-ss.png)
+
+- Located at the top of the form, the user will notice some text showing them what queston they are on. This text shows the user the index of the question that they are on.
 
 ## Manual Testing
 
