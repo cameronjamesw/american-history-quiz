@@ -138,6 +138,13 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 - Located at the top of the form, the user will notice some text showing them what queston they are on. This text shows the user the index of the question that they are on.
 
+- **See Results Button**
+
+![A screenshot of the See Results button](assets/images/features-ss/see-results-ss.png)
+
+- One the user has answered all 15 questions, the 'next question' button will be replaced with the 'see results' button. Upon clicking this button, the quiz window will collpase and the user will be shown the results window.
+- The 'see results' button follows the same pallet as the 'next question' button. 
+
 ## Manual Testing
 
 The Manual Testing can be found [here](TESTING.md)

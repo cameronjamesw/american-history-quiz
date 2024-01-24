@@ -318,7 +318,7 @@ form .active:hover {
     justify-content: center;
 }
 
-#nextQuestionBtn {
+.question-btn {
     border: #f00 2px solid;
     font-weight: bold;
     padding: 15px;
@@ -330,7 +330,7 @@ form .active:hover {
     width: fit-content;
 }
 
-#nextQuestionBtn:hover {
+.question-btn:hover {
     border: #000080 2px solid;
     cursor: pointer;
 }
@@ -343,22 +343,6 @@ form .active:hover {
 .wrong {
     border: #f00 2px solid;
     color: #f00;
-}
-
-.seeResultsBtn {
-    border: #f00 2px solid;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 20px;
-    font-size: 1em;
-    margin: 0 30px 20px 30px;
-    background-color: #000;
-    text-align: center;
-    width: fit-content;
-}
-
-.seeResultsBtn:hover {
-    border: #000080 2px solid;
 }
 
 /* This section refers to the results window */
@@ -498,7 +482,7 @@ form .active:hover {
         justify-content: center;
     }
 
-    #nextQuestionBtn {
+    .question-btn {
         padding: 15px;
         font-size: 2em;
         margin: 0 30px 20px 30px;
@@ -642,7 +626,7 @@ form .active:hover {
         justify-content: center;
     }
 
-    #nextQuestionBtn {
+    .question-btn {
         padding: 15px;
         font-size: 2em;
         margin: 0 30px 20px 30px;

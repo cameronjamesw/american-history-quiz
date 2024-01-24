@@ -268,6 +268,7 @@ function showAnswer(e){
         let nextQuestionDiv = document.getElementById('nextQuestionDiv');
         nextQuestionDiv.appendChild(seeResultsBtn);
         seeResultsBtn.classList.add('seeResultsBtn');
+        seeResultsBtn.classList.add('question-btn');
         seeResultsBtn.innerHTML = 'See Results';
         seeResultsBtn.style.cursor = 'pointer';
         seeResultsBtn.addEventListener('click', showResultsWindow);
