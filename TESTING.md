@@ -1,8 +1,8 @@
-## Manual Testing
+# Manual Testing
 
-### Features Testing
+## Features Testing
 
-**Form Testing**
+### Form Testing
 
 Feature | Test Case | Outcome | Screenshtot
 --- | --- | --- | ---
@@ -16,6 +16,12 @@ Form Validation #4 | Enter Short Password | DIsplays Relevent Error Msg | ![Scre
 Form Validation #5 | Enter Password Without Number | Displays Relevent Error Msg | ![Screenshot of password must contain number error message](assets/images/form-table-ss/password-number-screenshot.png)
 Submit Form | Click Submit | Submits form, displays difficulty window | ![Screenshot of click submit form outcome](assets/images/form-table-ss/hide-form-screenshot.png)
 Continue As Guest | Click Continue As Guest | Hides form without submitting, displays difficulty window | ![Screenshot of continue as guest clikc outcome](assets/images/form-table-ss/hide-form-screenshot.png)
+
+### Quiz Window Testing
+
+Feature | Test Case | Outcome | Screenshot
+--- | --- | --- | ---
+Click Begin Button | Click Button | Hides Begin Window | ![GIF of clicking begin button](assets/images/quiz-table-ss/Screen%20Recording%202024-01-24%20at%2018.01.27.mov)
 
 
 ### Browser Compatiblity
