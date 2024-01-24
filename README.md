@@ -112,3 +112,6 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 - Once the user has selected a difficulty, the corresponding quiz window will then be displayed to the user in readiness for them to start the quiz.
 
 ## Manual Testing
+
+THe Manual Testing can be found [here](TESTING.md)
+
