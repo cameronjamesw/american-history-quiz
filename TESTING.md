@@ -21,7 +21,12 @@ Continue As Guest | Click Continue As Guest | Hides form without submitting, dis
 
 Feature | Test Case | Outcome | Screenshot
 --- | --- | --- | ---
-Click Begin Button | Click Button | Hides Begin Window | ![GIF of clicking begin button](assets/images/quiz-table-ss/ScreenRecording2024-01-24at18.01.27-ezgif.com-gif-to-mp4-converter.gif)
+Hover Begin Button | Hover Button | Changes Border & Text Color | ![GIF of hovering begin button](assets/images/quiz-table-ss/hover-begin-ezgif.com-video-to-gif-converter.gif)
+Click Begin Button | Click Button | Hides Begin Window, Shows Quiz Window | ![GIF of clicking begin button](assets/images/quiz-table-ss/hide-begin.gif)
+Hover Answer Button | Hover Answer | Changes Border & Text Color | ![GIF of hovering answer button](assets/images/quiz-table-ss/hover-answer-ezgif.com-video-to-gif-converter.gif)
+Click Answer Button | Click An Answer | Changes Border & Text Color, reveals next question button | ![GIF of clicking an answer](assets/images/quiz-table-ss/select-answer-ezgif.com-video-to-gif-converter.gif)
+Click Next Question | Click Next Question Button | Shows the next question | ![GIF of clicking next question button](assets/images/quiz-table-ss/select-next-question-ezgif.com-video-to-gif-converter.gif)
+Click Get Results | Click Get Results Button | Collapses question window, reveals results window | ![GIF of clicking see results](assets/images/quiz-table-ss/select-get-results-ezgif.com-video-to-gif-converter.gif)
 
 
 ### Browser Compatiblity
