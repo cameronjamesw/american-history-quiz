@@ -111,9 +111,9 @@ function hideForm(){
  * This function shows the difficulty menu
  */
 function showDifficulty(){
-    let difficultyDiv = document.getElementById('difficultyDiv');
-    difficultyDiv.style.maxHeight = '1000px';
-    difficultyDiv.style.transitionDelay = '2s';
+    let beginDiv = document.getElementById('beginDiv');
+    beginDiv.style.maxHeight = '1000px';
+    beginDiv.style.transitionDelay = '2s';
 };
 
 // Come back to this code later
@@ -158,72 +158,24 @@ function btnHover(event){
  * color to red 
  */
 
-function easyHover(event){
-    easyBtn.style.borderColor = 'red';
-    easyBtn.style.color = 'red';
-    easyBtn.style.cursor = 'pointer';
+function beginHover(event){
+    beginBtn.style.borderColor = 'red';
+    beginBtn.style.color = 'red';
+    beginBtn.style.cursor = 'pointer';
 };
 
 /**
  * This function makes the easy difficulty button change border 
  * and font color from red to white
  */
-function easyOut(event){
-    easyBtn.style.borderColor = 'white';
-    easyBtn.style.color = 'white';
+function beginOut(event){
+    beginBtn.style.borderColor = 'white';
+    beginBtn.style.color = 'white';
 };
 
-let easyBtn = document.getElementById('easyBtn');
-easyBtn.addEventListener('mouseover', easyHover);
-easyBtn.addEventListener('mouseout', easyOut);
-
-// Medium Difficulty Button hover in, hover out
-/**
- * This function makes the medium difficulty button change border and font
- * color to red 
- */
-function medHover(event){
-    medBtn.style.borderColor = 'red';
-    medBtn.style.color = 'red';
-    medBtn.style.cursor = 'pointer';
-};
-
-/**
- * This function makes the medium difficulty button change border 
- * and font color from red to white
- */
-function medOut(event){
-    medBtn.style.borderColor = 'white';
-    medBtn.style.color = 'white';
-};
-
-let medBtn = document.getElementById('medBtn');
-medBtn.addEventListener('mouseover', medHover);
-medBtn.addEventListener('mouseout', medOut);
-
-// Hard difficulty button hover in, hover out
-/**
- * This function makes the hard difficulty button change border and font
- * color to red 
- */
-function hardHover(event){
-    hardBtn.style.borderColor = 'red';
-    hardBtn.style.color = 'red';
-    hardBtn.style.cursor = 'pointer';
-};
-
-/**
- * This function makes the hard difficulty button change border 
- * and font color from red to white
- */
-function hardOut(event){
-    hardBtn.style.borderColor = 'white';
-    hardBtn.style.color = 'white';
-};
-
-let hardBtn = document.getElementById('hardBtn');
-hardBtn.addEventListener('mouseover', hardHover);
-hardBtn.addEventListener('mouseout', hardOut);
+let beginBtn = document.getElementById('beginBtn');
+beginBtn.addEventListener('mouseover', beginHover);
+beginBtn.addEventListener('mouseout', beginOut);
 
 // This section adds event listeners to the difficulty menu 
 
@@ -232,9 +184,9 @@ hardBtn.addEventListener('mouseout', hardOut);
  * to 0px, this also removes the transition delay
  */
 function hideDifficulty(){
-    let difficultyDiv = document.getElementById('difficultyDiv');
-    difficultyDiv.style.maxHeight = '0';
-    difficultyDiv.style.transitionDelay = '0s';
+    let beginDiv = document.getElementById('beginDiv');
+    beginDiv.style.maxHeight = '0';
+    beginDiv.style.transitionDelay = '0s';
 };
 
 /**
@@ -268,7 +220,7 @@ function runQuiz() {
     getQuestion();
 };
 
-easyBtn.addEventListener('click', runQuiz);
+beginBtn.addEventListener('click', runQuiz);
 
 
 nextQuestionBtn.addEventListener('click', () => {
