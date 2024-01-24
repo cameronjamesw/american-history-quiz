@@ -78,7 +78,7 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ### Heading
 
-![A screenshot of the header of the Star Spangled Quiz](assets/images/header-screenshot.png)
+![A screenshot of the header of the Star Spangled Quiz](assets/images/features-ss//header-screenshot.png)
 
 - Above is a screenshot of the header for the website. Straight away, the user will be able to notice that the title of the website is very catchy due to how bold the font weight is, along with the font style `Anton` that has been used,
 - Due to the title being nested within the header, the user will be able to see the title at all points of the wuiz, thus reinforcing the brand being estblished by the website. 
@@ -86,14 +86,14 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ### Welcome Text
 
-![A screenshot of the welcome text which is being used on the website.](assets/images/welcome-text-screenshot.png)
+![A screenshot of the welcome text which is being used on the website.](assets/images/features-ss//welcome-text-screenshot.png)
 
 - The welcome text is very self-explanitory, it is the text located just underneath the header which welcomes the user and gives them a brief oversight of the quiz they are about to participate in. The purpose of the text is to allow the user to metaphorically 'find their feet', while at the same time encouraging them to sign in/sign up with the form below, thus growing the brand's demographic. 
 - The welcome text section of the page upholds the color pallet aforementioned. The background of the boxes which the pieces of text are located in adopt a semi-transparent black background. This background provides an excellent contrast against the body of the website, optimising user accessiblity, whilst upholding the sleek design of the website.
 
 ### Sign-Up Form
 
-![A screenshot of the Sign-Up Form being used on the website.](assets/images/form-screenshot.png)
+![A screenshot of the Sign-Up Form being used on the website.](assets/images/features-ss//form-screenshot.png)
 
 - Above the reader will be able to vind a screenshot of the Sign-Up Form which has been created for the website. Upon first glance, it is clear to see that the form continues the aesthetic precedent set by the website, adopting the semi-transparent background, solid white border while using red as a supporting color. The user is able to hover over specific elements of the form and the color/border color will change from white to red, thus implying to the ussr that they are encouraged to click the element. 
 - The form allows for the user to sign up to the website in order to access the quiz, if the user has signed up before then they will be able to log-in to their existing account. 
@@ -103,7 +103,7 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 - Upon successfully submitting the form, the user's details shall be logged to the console.
 - If the user does not feel a need to log-in or sign-up, then they can select 'continue as a guest' which acts as a way of bypassing the form without having to submit it.
 
-### Select Difficulty Window
+### Begin Quiz Window
 
 ![A screenshot of the difficulty window that is featured on the website](assets/images/difficulty-screenshot.png)
 
