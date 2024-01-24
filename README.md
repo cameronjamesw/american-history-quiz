@@ -105,11 +105,11 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ### Begin Quiz Window
 
-![A screenshot of the difficulty window that is featured on the website](assets/images/difficulty-screenshot.png)
+![A screenshot of the difficulty window that is featured on the website](assets/images/features-ss/begin-quiz-ss.png)
 
-- Here is a screenshot of what the user can expect to see upon bypassing the form. A formerly hidden difficulty window will be revealed to the user and this will allow the user to select a difficulty of easy, medium or hard.
-- Upon hovering over the difficulties, the background color of the boxes will change from white to red, this enhancing the users experience with the website as this illustrates interactivity to the user.
-- Once the user has selected a difficulty, the corresponding quiz window will then be displayed to the user in readiness for them to start the quiz.
+- Here is a screenshot of what the user can expect to see upon bypassing the form. A formerly hidden begin quiz window will be revealed to the user and this will allow the user to access the quiz.
+- Upon hovering over the begin quiz button, the background color of the box will change from white to red, this enhancing the users experience with the website as this illustrates interactivity to the user.
+- Once the user has pressed the button, the quiz window will then be displayed to the user in readiness for them to start the quiz.
 
 ## Manual Testing
 
