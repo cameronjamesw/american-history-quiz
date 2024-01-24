@@ -2,21 +2,21 @@
 
 Welcome to the Star Spangled Quiz, a quiz surrounding American History from modern day America, right through to the 18th Century. 
 
-## Introduction
+# Introduction
 
-### A Brief Overview
+## A Brief Overview
 
 - The purpose of the American History Quiz is to provide students and quiz-enthusiasts alike a vague introduction into American History through the means of engaging in a short but sweet quiz which has 3 levels of difficulty for the challenger. 
 
 - The questions provided within the quiz of course all surround American historty, from rather obscure questions regarding former Presidents of the country, through to general questions concerning the geography of the 50 states, the quiz is jam packed with an array of questions where every challenger is sure to learn something new. 
 
-### Target Audience
+## Target Audience
 
 - The target audience of the Star Spangled Quiz are mainly history students and quiz-enthusiasts, as well as the members of the general public who enjoy engaging in the odd quiz from time to time. 
 
 - With the demand for pub quizzes rising throughout the country, a website where the challenger can cycle through 3 different levels of difficulty surrounding the same topic would be highly welcomed. 
 
-## Wireframing
+# Wireframing
 
 - Here are the screenshots of the initial wireframes I had created for the quiz website. I have drafted a wireframe for the landing page with the welcome text and registration form, as well as a wireframe for the quiz window.
 
@@ -25,7 +25,7 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
 
     - Secondly, this will benefit the reader as it will allow them to see the thought process behind the features. Any final features that have changed compared to the wireframe will be documented with an explanation, giving the reader an insight as to why this has changed.
 
-### Landing Page Wireframe
+## Landing Page Wireframe
 
 ![A wireframe of the landing page](assets/images/wireframe-1.jpg)
 
@@ -43,7 +43,7 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
     - With the use of JavaScript, the form shall have multiple levels of validation regarding both the username and the password, this ensures that the user will not be able to create a week password or username - thus protecting their data whilst using the website. The form's of validation will ensure that the 'password' and 'confirm password' fields match, that the password is of a certain length, and that it must contain a number. 
     - For the aesthetic of the form, it shall fdllow suit with the rest of the website's color pallet. White text contained within a black box with a white border of 2px. Through keeping up the website's aesthetic with the form, this reinforces a positive experience for the user. 
 
-### Quiz Window Wireframe
+## Quiz Window Wireframe
 
 ![A wireframe of the quiz window illustrating how it was conceptulised during wireframing](assets/images/wireframe-2.jpg)
 
@@ -65,7 +65,7 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
     - Underneath the quiz window, the user will be able to cycle through the questions using navigation arrows. The respective arrow will display either the question before or after the current question, depending on which arrows the user presses. 
     - The navigation arrows shall have a color pallet of lime green. This is going against the color pallet of the website in order to draw attention to the user, and thus making them aware that they have the ability to utilise question navigation using these arrows. When the arrows are hovered over, they will display a background color of a darker green, this indicating to the user that they are prompted to click.
 
-## Deployment 
+# Deployment 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
@@ -74,9 +74,9 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
 
 The live link can be found here - https://cameronjamesw.github.io/american-history-quiz
 
-## Features
+# Features
 
-### Heading
+## Heading
 
 ![A screenshot of the header of the Star Spangled Quiz](assets/images/features-ss//header-screenshot.png)
 
@@ -84,14 +84,14 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 - Due to the title being nested within the header, the user will be able to see the title at all points of the wuiz, thus reinforcing the brand being estblished by the website. 
 - The title adopts the color pallet used by the website, using the main color of white, combining the text-decoration with a strong red. With the theme of the quiz being American History, it makes sense for any supporting colors to be either red or blue. 
 
-### Welcome Text
+## Welcome Text
 
 ![A screenshot of the welcome text which is being used on the website.](assets/images/features-ss//welcome-text-screenshot.png)
 
 - The welcome text is very self-explanitory, it is the text located just underneath the header which welcomes the user and gives them a brief oversight of the quiz they are about to participate in. The purpose of the text is to allow the user to metaphorically 'find their feet', while at the same time encouraging them to sign in/sign up with the form below, thus growing the brand's demographic. 
 - The welcome text section of the page upholds the color pallet aforementioned. The background of the boxes which the pieces of text are located in adopt a semi-transparent black background. This background provides an excellent contrast against the body of the website, optimising user accessiblity, whilst upholding the sleek design of the website.
 
-### Sign-Up Form
+## Sign-Up Form
 
 ![A screenshot of the Sign-Up Form being used on the website.](assets/images/features-ss//form-screenshot.png)
 
@@ -103,7 +103,7 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 - Upon successfully submitting the form, the user's details shall be logged to the console.
 - If the user does not feel a need to log-in or sign-up, then they can select 'continue as a guest' which acts as a way of bypassing the form without having to submit it.
 
-### Begin Quiz Window
+## Begin Quiz Window
 
 ![A screenshot of the begin quiz window that is featured on the website](assets/images/features-ss/begin-quiz-ss.png)
 
@@ -111,9 +111,9 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 - Upon hovering over the begin quiz button, the background color of the box will change from white to red, this enhancing the users experience with the website as this illustrates interactivity to the user.
 - Once the user has pressed the button, the quiz window will then be displayed to the user in readiness for them to start the quiz.
 
-### Quiz Window 
+## Quiz Window 
 
-- **Upon Loading**
+### Upon Loading
 
 ![A screenshot of the quiz window that the user can expect to see upon clicking the begin wuiz button.](assets/images/features-ss/display-question-ss.png)
 
@@ -123,7 +123,7 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ![A screenshot showing an answer being hovered](assets/images/features-ss/hover-answer-ss.png)
 
-- **Selecting An Answer**
+### Selecting An Answer
 
 ![A screenshot showing an answer being selected](assets/images/features-ss/select-answer-ss.png)
 
@@ -132,20 +132,20 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ![A screenshot showing the next question button being hovered over](assets/images/features-ss/hover-next-question-ss.png)
 
-- **Incrementing Question Number**
+### Incrementing Question Number
 
 ![A screenshot of the question number incrementing](assets/images/features-ss/increment-question-ss.png)
 
 - Located at the top of the form, the user will notice some text showing them what queston they are on. This text shows the user the index of the question that they are on.
 
-- **See Results Button**
+### See Results Button
 
 ![A screenshot of the See Results button](assets/images/features-ss/see-results-ss.png)
 
 - One the user has answered all 15 questions, the 'next question' button will be replaced with the 'see results' button. Upon clicking this button, the quiz window will collpase and the user will be shown the results window.
 - The 'see results' button follows the same pallet as the 'next question' button. 
 
-## Manual Testing
+# Manual Testing
 
 The Manual Testing can be found [here](TESTING.md)
 
