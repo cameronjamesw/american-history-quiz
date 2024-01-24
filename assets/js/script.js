@@ -232,7 +232,7 @@ function getQuestion(){
     resetState();
     getNextQuestion(shuffledQuestions[currentQuestionIndex]);
     let questionNumber = document.getElementById('questionNoText');
-    questionNumber.innerHTML = `<span class="white">Question ` + (parseInt(currentQuestionIndex) + 1) + ` of 5</span>`;
+    questionNumber.innerHTML = `<span class="white">Question ` + (parseInt(currentQuestionIndex) + 1) + ` of 15</span>`;
 };
 
 function getNextQuestion(easyQuestions) {
