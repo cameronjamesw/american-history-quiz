@@ -381,7 +381,7 @@ const easyQuestions = [
             {text: 'Michigan', correct: false},
             {text: 'Texas', correct: true},
             {text: 'Florida', correct: false},
-            {text: 'New Mexcio', correct: false}
+            {text: 'New Mexico', correct: false}
        ]
     },
     {
@@ -406,13 +406,13 @@ const easyQuestions = [
         question: 'Which state of America has the biggest land mass?',
         answer: [
             {text: 'Alaska', correct: true},
-            {text: 'Califronia', correct: false},
+            {text: 'California', correct: false},
             {text: 'Florida', correct: false},
             {text: 'Massachusetts', correct: false}
         ]
     },
     {
-        question: 'Who was the first President to live in the White House?',
+        question: 'Who was the first President to live in The White House?',
         answer: [
             {text: 'George Washington', correct: false},
             {text: 'John Adams', correct: true},
@@ -434,7 +434,7 @@ const easyQuestions = [
         answer: [
             {text: 'Chyenne', correct: true},
             {text: 'Baton Rouge', correct: false},
-            {text: 'Talahasee', correct: false},
+            {text: 'Tallahasee', correct: false},
             {text: 'Casper', correct: false}
         ]
     },
