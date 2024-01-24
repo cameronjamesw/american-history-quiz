@@ -21,7 +21,7 @@ Continue As Guest | Click Continue As Guest | Hides form without submitting, dis
 
 Feature | Test Case | Outcome | Screenshot
 --- | --- | --- | ---
-Click Begin Button | Click Button | Hides Begin Window | ![GIF of clicking begin button](assets/images/quiz-table-ss/Screen%20Recording%202024-01-24%20at%2018.01.27.mov)
+Click Begin Button | Click Button | Hides Begin Window | ![GIF of clicking begin button](assets/images/quiz-table-ss/ScreenRecording2024-01-24at18.01.27-ezgif.com-gif-to-mp4-converter.gif)
 
 
 ### Browser Compatiblity
