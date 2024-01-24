@@ -195,7 +195,7 @@ function hideDifficulty(){
  */
 function showQuestionWindow() {
     let questionWindow = document.getElementById('questionWindow');
-    questionWindow.style.maxHeight = '1000px';
+    questionWindow.style.maxHeight = '2000px';
     questionWindow.style.transitionDelay = '2s';
 };
 
