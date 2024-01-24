@@ -113,5 +113,5 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ## Manual Testing
 
-THe Manual Testing can be found [here](TESTING.md)
+The Manual Testing can be found [here](TESTING.md)
 
