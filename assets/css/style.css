@@ -238,6 +238,7 @@ form .active:hover {
     margin: 20px 50px;
     position: relative;
     bottom: 80px;
+    height: 400px;
     max-height: 0px;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -451,9 +452,9 @@ form .active:hover {
         font-size: 1.5em;
     }
 
-    /* This section refers to the difficulty buttons */
+    /* This section refers to the begin window */
 
-    #difficultyDiv div {
+    #beginDiv div {
         margin: 50px 150px;
         font-size: 2em;
         letter-spacing: 5px;
@@ -577,13 +578,13 @@ form .active:hover {
         font-size: 2em;
     }
 
-    /* This section is for the difficulties */
+    /* This section is for the begin window */
 
-#difficultyDiv {
+#beginDiv {
     margin: 20px 300px;
 }
 
-#difficultyDiv div {
+#beginDiv div {
     padding: 20px;
     border: #fff 2px solid;
     color: #fff;
