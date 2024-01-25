@@ -2,7 +2,7 @@
 
 ## Features Testing
 
-### Form Testing
+ - ### Form Testing
 
 Feature | Test Case | Outcome | Screenshtot | Pass or Fail
 --- | --- | --- | --- | ---
@@ -48,7 +48,7 @@ No. | Bug | Expected Outcome | Actual Outcome | Fixed
 No. | Bug | Expected Outcome | Actual Outcome
 --- | --- | --- | ---
 1 | Clicking the last answer multiple times will duplicate the See Results button | See Results button only displayed once | ![A GIF showing multiple See Results Button](assets/images/bugs-ss/multiple-check-results-ezgif.com-video-to-gif-converter.gif)
-2 | Clicking the correct answer multiple times will increment score | Only incrementing the score once if answer if correct | ![A screenshot showing the score being too high](assets/images/bugs-ss/wrong-score.png)
+2 | Clicking the correct answer multiple times will increment score | Only incrementing the score once if answer is correct | ![A screenshot showing the score being too high](assets/images/bugs-ss/wrong-score.png)
 
 ## Lighthouse
 
