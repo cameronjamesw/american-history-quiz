@@ -28,6 +28,7 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
         * [Begin Quiz Window](#begin-quiz-window)
         * [Quiz Window](#quiz-window)
         * [Results Window](#results-window)
+        * [Future Implementations](#future-implementations)
 
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
@@ -206,6 +207,12 @@ To clone the repository:
 ![A screenshot of the Exit Quix Button being hovered over](assets/images/features-ss/exit-quiz-ss.png)
 
 - The second button that the user can see is the Exit Quiz Button. This button allowsfor the user to collapse the results window, and thus marks the end of the quiz.
+
+## Future Implementations
+
+- In the near future, it is a definite possibility to implement a difficulty level for the user. Granted there is an array of difficulty within the questions provided however, if there is a difficulty selection for the user then this will maximise convenience for any first-time users that are rather new to American History.
+
+- Furthermore, upon doing research into accessibility, it is clear that this website is not very accessible for anyone that is fully color blind. Upon using the Web Disability Simulator through Google Chrome it is clear that there is not much contrast when viewing the quiz window and getting the answers. Therefore in the future it would be ideal to implement further contrast between the answers, whether this is a remodelling of the color pallet, or adding expressive icons to the respective answers. 
 
 # Technologies Used
 
