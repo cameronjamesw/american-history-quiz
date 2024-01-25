@@ -1,5 +1,4 @@
 // This code switches between sign-in and sign-up 
-
 let signinBtn = document.getElementById('signinBtn');
 let signupBtn = document.getElementById('signupBtn');
 let title = document.getElementById('title');
@@ -58,7 +57,6 @@ function handleSubmit(event) {
     let confirmPasswordValue = document.getElementById('confirm-password').value;
     let userErrorMsg = document.getElementById('user-msg');
     let passErrorMsg = document.getElementById('error-msg');
-    let title = document.getElementById('title').innerHTML;
 
     if (usernameLength < 6) {
         console.log('Username must be at least 6 characters');
@@ -85,7 +83,7 @@ function handleSubmit(event) {
         passErrorMsg.innerHTML = '';
         userErrorMsg.innerHTML = '';
         form.submit();
-        showDifficulty();
+        showBeginWindow();
         hideForm();
     }
 }
@@ -104,22 +102,20 @@ form.addEventListener('submit', handleSubmit);
 function hideForm(){
     event.preventDefault();
     form.style.maxHeight = ('0');
-    showDifficulty();
+    showBeginWindow();
 }
 
 /**
- * This function shows the difficulty menu
+ * This function shows the Begin Quiz Window
  */
-function showDifficulty(){
+function showBeginWindow(){
     let beginDiv = document.getElementById('beginDiv');
     beginDiv.style.maxHeight = '1000px';
     beginDiv.style.transitionDelay = '2s';
 };
 
-// Easy Difficulty Button hover in, hover out
-
 /**
- * This function makes the easy difficulty button change border and font
+ * This function makes the Begin Quiz button change border and font
  * color to red 
  */
 
@@ -130,7 +126,7 @@ function beginHover(event){
 };
 
 /**
- * This function makes the easy difficulty button change border 
+ * This function makes the Begin Quiz Button change border 
  * and font color from red to white
  */
 function beginOut(event){
@@ -142,13 +138,13 @@ let beginBtn = document.getElementById('beginBtn');
 beginBtn.addEventListener('mouseover', beginHover);
 beginBtn.addEventListener('mouseout', beginOut);
 
-// This section adds event listeners to the difficulty menu 
+// This section adds event listeners to the Begin Quiz Button 
 
 /**
- * This function hides the difficulty menu by setting the max-height
+ * This function hides the Begin Quiz Window by setting the max-height
  * to 0px, this also removes the transition delay
  */
-function hideDifficulty(){
+function hideBeginWindow(){
     let beginDiv = document.getElementById('beginDiv');
     beginDiv.style.maxHeight = '0';
     beginDiv.style.transitionDelay = '0s';
@@ -164,6 +160,7 @@ function showQuestionWindow() {
     questionWindow.style.maxHeight = '2000px';
     questionWindow.style.transitionDelay = '0s';
 
+// This if statement sets the min-height of the quiz window
     if (windowWidth < '500') {
         questionWindow.style.minHeight = '710px';
     } else if (windowWidth < '768') {
@@ -186,11 +183,11 @@ let currentQuestionIndex;
 let score = 0;
 
 /**
- * This function hides the difficulty menu and reveals the easy quiz window
+ * This function hides the Begin Quiz Window and reveals the Question Window. It also shuffles the
+ * question order using the sort and random functions. Sets question index to 0.
  */
-
 function runQuiz() {
-    hideDifficulty();
+    hideBeginWindow();
     showQuestionWindow();
     shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
@@ -205,6 +202,10 @@ nextQuestionBtn.addEventListener('click', () => {
     getQuestion();
 });
 
+/**
+ * This function takes the parameters of the question objects and passes them into
+ * the getNextQuestion function. Sets the question number in the quiz window.
+ */
 function getQuestion(){
     resetState();
     getNextQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -212,6 +213,11 @@ function getQuestion(){
     questionNumber.innerHTML = `<span class="white">Question ` + (parseInt(currentQuestionIndex) + 1) + ` of 15</span>`;
 };
 
+/**
+ * This function sets the question Inner-html using question parameter.
+ * Creates new question divs with the answers passed to the function.
+ * It adds the class of correct to the answers that are correct.
+ */
 function getNextQuestion(easyQuestions) {
     questionElement.innerHTML = easyQuestions.question;
     easyQuestions.answer.forEach(answer => {
@@ -225,6 +231,11 @@ function getNextQuestion(easyQuestions) {
     })
 };
 
+/**
+ * This function removes the div elements created in the function above,
+ * thus setting the state of the questionWindow back to default.
+ * Removes the display of the Next Question button.
+ */
 function resetState(){
     nextQuestionBtn.style.display = 'none';
     while (answerDivElement.firstChild){
@@ -232,30 +243,33 @@ function resetState(){
     };
 };
 
+/**
+ * This function deactivates the answer buttons after the first click.
+ * Passes the correct value to the function of setAnswerClass.
+ * Determines whether to show the Next Question button or See Results Button.
+  */
 function showAnswer(e){
+    // This removes the event listener after the first click.
     let eventButtons = document.getElementsByClassName('answerText');
     for (let eventButton of eventButtons) {
         eventButton.removeEventListener('click', showAnswer);
     };
     
+    // Thid takes the object's correct value and passes it to the setAnswer Class function
     let clickedButton = e.target;
-    
-    let questionArray = easyQuestions;
-    let answerTrue = questionArray[0].answer[0].correct;
-        
-    let correct = clickedButton.dataset.correct;
     Array.from(answerDivElement.children).forEach(button => {
         setAnswerClass(button, button.dataset.correct)
     });
 
-dataType = clickedButton.classList.contains('correct');
-    console.log(dataType);
+    // This increments the user's score by 1 if answered correctly
+    let dataType = clickedButton.classList.contains('correct');
     if (dataType) {
         score = ++score;
         let scoreText = document.getElementById('score');
     scoreText.innerHTML = parseInt(score);
     };   
 
+    // This if statement determines whether the nextQuestion Button or seeResults button is displayed
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
          nextQuestionBtn.style.display = 'block';
     } else if (shuffledQuestions.length = currentQuestionIndex + 1) {
@@ -268,17 +282,12 @@ dataType = clickedButton.classList.contains('correct');
     };
 };
 
-function showResultsWindow() {
-    let questionWindow = document.getElementById('questionWindow');
-    questionWindow.style.maxHeight = '0';
-    questionWindow.style.minHeight = '0';
-    questionWindow.style.transitionDelay = '0s';
-    let resultsWindow = document.getElementById('resultsDiv');
-    resultsWindow.style.maxHeight ='1000px';
-    resultsWindow.style.transitionDelay = '2s';
-};
-
+/**
+ * This function takes the parameter of the question objects answer values, if correct it adds
+ * the data-type of correct, if wrong it adds the data-type of wrong.
+  */
 function setAnswerClass(element, correct){
+    // The clear answer class removes the datatype and class for the next question
     clearAnswerClass(element);
     if (correct) {
         element.classList.add('correct')
@@ -289,6 +298,10 @@ function setAnswerClass(element, correct){
     }
 };
 
+/**
+ * This function removes both the class and data-type of the parameters passed
+ * to the function so that they are clear for the next question.
+ */
 function clearAnswerClass(element){
     element.classList.remove('correct');
     element.classList.remove('wrong');
@@ -298,24 +311,42 @@ function clearAnswerClass(element){
 
 // This section refers to the Results Window 
 
+/**
+ * This function collapses the question window and shows the results window.
+  */
+function showResultsWindow() {
+    let questionWindow = document.getElementById('questionWindow');
+    questionWindow.style.maxHeight = '0';
+    questionWindow.style.minHeight = '0';
+    questionWindow.style.transitionDelay = '0s';
+    let resultsWindow = document.getElementById('resultsDiv');
+    resultsWindow.style.maxHeight ='1000px';
+    resultsWindow.style.transitionDelay = '2s';
+};
+
+/**
+ * This function closes the Results Window by setting the maxHeight to 0px.
+  */
 function closeQuiz() {
     let resultsWindow = document.getElementById('resultsDiv');
     resultsWindow.style.maxHeight ='0';
     resultsWindow.style.transitionDelay = '0s';
 };
 
+/**
+ * This function closes the Results Window and re-opens the 
+ * BeginQuiz window for the user to replay the quiz. Reset's the user score.
+  */
 function tryAgain() {
     closeQuiz();
-    let beginDiv = document.getElementById('beginDiv');
-    beginDiv.style.maxHeight = '1000px';
-    beginDiv.style.transitionDelay = '3s';
-    let nextQuestionDiv = document.getElementById('nextQuestionDiv');
+    showBeginWindow();
     let seeResultsBtn = document.getElementById('seeResultsID');
     seeResultsBtn.style.display = 'none';
     seeResultsBtn.classList.remove('seeResultsBtn');
     seeResultsBtn.classList.remove('question-btn');
-    score = 0;
 
+    // User score is set back to 0
+    score = 0;
 };
 
 let tryAgainBtn = document.getElementById('tryAgainBtn');
@@ -324,10 +355,10 @@ tryAgainBtn.addEventListener('click', tryAgain);
 let exitQuizBtn = document.getElementById('exitQuizBtn');
 exitQuizBtn.addEventListener('click', closeQuiz);
 
-function leaveQuizWindow() {
-    hiddenOverlay.style.display = 'block';
-};
-
+/**
+ * This function allows the user to exit the quiz window through clicking 
+ * the X at the top-right corner of the quiz window.
+  */
 function exitQuiz() {
     let questionWindow = document.getElementById('questionWindow');
     questionWindow.style.maxHeight = '0';
@@ -338,6 +369,8 @@ function exitQuiz() {
 let crossBtn = document.getElementById('quizCross');
 crossBtn.addEventListener('click', exitQuiz);
 
+
+// These are the questions for the quiz.
 const easyQuestions = [
     {
         question: 'Who was the first President of the United States of America?',
