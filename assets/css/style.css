@@ -34,6 +34,7 @@ body {
     flex-direction: column;
 }
 
+/* This pushes the footer down to the bottom of the page */
 main {
     flex: 1 0 auto;
 }
@@ -43,7 +44,6 @@ footer {
 }
 
 /* This is the header styles */
-
 #heading {
     color: #f00;
     text-transform: uppercase;
@@ -57,7 +57,6 @@ footer {
 }
 
 /* This is the main body styles */
-
 #welcome-div,
 #prompt-div {
     border: solid #fff 2px;
@@ -74,8 +73,7 @@ footer {
     text-align: center;
 }
 
-/* This is the styles for the form */
-
+/* These are the styles for the form */
 #form {
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0 20px 50px;
@@ -97,7 +95,7 @@ footer {
     display: flex;
 }
 
-/* This class is to make 'register' and 'login' white, while the underline remains blue */
+    /* This class is to make 'register' and 'login' white, while the underline remains blue */
 .white {
     color: #fff;
 }
@@ -115,7 +113,7 @@ footer {
     letter-spacing: 3px;
 }
 
-/* Input Styles */
+    /* Input Styles */
 #inputs {
     display: flex;
     flex-wrap: nowrap;
@@ -123,7 +121,7 @@ footer {
     flex-basis: 300px;
 }
 
-/* These are the form input styles */
+    /* These are the form input styles */
 form input {
     margin-left: 20px;
     margin-right: 20px;
@@ -134,7 +132,7 @@ form input {
     justify-content: flex-end;
 }
 
-/* Input placeholder color */
+    /* Input placeholder color */
 form input::placeholder {
     color: #fff;
 }
@@ -144,7 +142,7 @@ form input::placeholder {
     border-radius: 10px;
 }
 
-/* Submit button Styles */
+    /* Submit button Styles */
 
 form #submitBtns {
     display: flex;
@@ -193,7 +191,7 @@ form button:hover {
     transition: padding 0.5s;
 }
 
-/* Signup/Signin Button Styles */
+    /* Signup/Signin Button Styles */
 
 .buttons {
     display: flex;
@@ -244,7 +242,7 @@ form .active:hover {
     overflow-y: hidden;
     transition: max-height 1.5s;
 }
-
+    /* This targets the div's child */
 #beginDiv div {
     padding: 20px;
     border: #fff 2px solid;
@@ -274,6 +272,7 @@ form .active:hover {
     overflow: hidden;
 }
 
+    /* This refers to the question number text */
 #questionNoTextDiv {
     display: flex;
     justify-content: space-between;
@@ -287,6 +286,7 @@ form .active:hover {
     text-decoration-thickness: 3px;
 }
 
+    /* This refers to the X icon */
 i {
     color: #fff;
     margin: 25px;
@@ -298,6 +298,7 @@ i:hover {
     cursor: pointer;
 }
 
+    /* These styles refer to the question div and text */
 #questionDiv {
     border: #f00 2px solid;
     border-radius: 10px;
@@ -312,6 +313,7 @@ i:hover {
     background-color: #000;
 }
 
+    /* These stlyes refer to the answers div and text */
 .answerText {
     margin: 20px;
     background-color: #000;
@@ -331,6 +333,7 @@ i:hover {
     text-align: center;
 }
 
+    /* These styles refer to the next question and see results buttons */
 #nextQuestionDiv {
     display: flex;
     justify-content: center;
@@ -353,6 +356,12 @@ i:hover {
     cursor: pointer;
 }
 
+#seeResultsID {
+    display: none;
+}
+
+    /* These classes style the answerText elements based on what value the setAnswerCkass function 
+        passes to them */
 .correct, .correct:hover {
     border: #00c04b 2px solid;
     color: #00c04b;
@@ -363,9 +372,7 @@ i:hover {
     color: #f00;
 }
 
-#seeResultsID {
-    display: none;
-}
+
 
 /* This section refers to the results window */
 
