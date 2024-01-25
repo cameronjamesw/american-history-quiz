@@ -29,6 +29,16 @@ Next Question | Click Next Question Button | Shows the next question | ![GIF of 
 See Results | Click See Results Button | Collapses question window, reveals results window | ![GIF of clicking see results](assets/images/quiz-table-ss/select-get-results-ezgif.com-video-to-gif-converter.gif) | Pass
 X Button | Click X Button | Exit Quiz before reaching the end | ![A GIF clicking the X button and collapsing the quiz window](assets/images/quiz-table-ss/collapse-quiz-ezgif.com-video-to-gif-converter.gif)
 
+**Results Window Testing**
+
+Feature | Test Case | Outcome | Screenshot | Pass or Fail
+--- | --- | --- | --- | ----
+Count Score | Select 5 correct answers | Displays test of "You Scored 5 out of 15" | ![Screenshot of score number feature](assets/images/results-table/correct-answers-ss.png)
+Hover Try Again Button | Hover Button | Changes Border Color | ![GIF of hovering try again button](assets/images/results-table/hover-try-again-ezgif.com-video-to-gif-converter.gif) | Pass
+Hover Exit Quiz Button | Hover Button | Changes Border Color | ![GIF of hovering exit quiz button](assets/images/results-table/hover-exti-quiz-ezgif.com-video-to-gif-converter.gif) | Pass
+Try Again Button | Click Try Again Button | Collapses Results Window, reveals Begin Quiz Window | ![GIF of clicking try again button](assets/images/results-table/click-try-again-ezgif.com-video-to-gif-converter.gif) | Pass
+Exit Quiz Button | Click Exit Quiz Button | Collapse Results Window | ![GIF of clicking exit quiz  button](assets/images/results-table/click-exit-quiz-ezgif.com-video-to-gif-converter.gif) | Pass
+
 
 ## Browser Compatiblity
 
