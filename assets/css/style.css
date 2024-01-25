@@ -361,6 +361,10 @@ i:hover {
     color: #f00;
 }
 
+#seeResultsID {
+    display: none;
+}
+
 /* This section refers to the results window */
 
 #resultsDiv {

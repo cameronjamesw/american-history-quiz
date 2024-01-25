@@ -116,41 +116,6 @@ function showDifficulty(){
     beginDiv.style.transitionDelay = '2s';
 };
 
-// Come back to this code later
-/*
- let diffBtns = document.getElementsByClassName('diffBtn');
-function hoverDiffBtn(event){
-  diffBtns.style.backgroundColor = 'red';
-};  
-
- document.addEventListener('DOMContentLoaded', function(){
-    let diffBtns = document.getElementsByClassName('diffBtn');
-    
-    for (i = 0; i <= diffBtns.length; i++){
-        console.log(diffBtns[i]);
-        diffBtns[i].addEventListener('mouseover', btnHover);
-    };
- }
- ); */
-
-
-// Come back to this later
-/*
-function btnHover(event){
-    let diffBtns = document.getElementsByClassName('diffBtn');
-    for (i = 0; i <= diffBtns.length; i++){
-        if (diffBtns[0]){
-            diffBtns[0].style.backgroundColor = 'red';
-        } else if (diffBtns[1]){
-            diffBtns[1].style.backgroundColor = 'red';
-        } else {
-         diffBtns[2].style.backgroundColor = 'red';
-    }};
-}; */
-
-
-// Difficulty Button Hover Functions
-
 // Easy Difficulty Button hover in, hover out
 
 /**
@@ -273,21 +238,19 @@ dataType = clickedButton.classList.contains('correct');
         score = ++score;
         let scoreText = document.getElementById('score');
     scoreText.innerHTML = parseInt(score);
-    };
-
-   
+    };   
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
          nextQuestionBtn.style.display = 'block';
-    } else {
-        let seeResultsBtn = document.createElement('p');
-        let nextQuestionDiv = document.getElementById('nextQuestionDiv');
-        nextQuestionDiv.appendChild(seeResultsBtn);
-        seeResultsBtn.setAttribute('id', 'seeResultsID');
+    } else if (shuffledQuestions.length = currentQuestionIndex + 1) {
+        let seeResultsBtn = document.getElementById('seeResultsID');
+        /*let nextQuestionDiv = document.getElementById('nextQuestionDiv');
+        nextQuestionDiv.appendChild(seeResultsBtn);*/
+        /*seeResultsBtn.setAttribute('id', 'seeResultsID');*/
         seeResultsBtn.classList.add('seeResultsBtn');
         seeResultsBtn.classList.add('question-btn');
-        seeResultsBtn.innerHTML = 'See Results';
         seeResultsBtn.style.cursor = 'pointer';
+        seeResultsBtn.style.display = 'block';
         seeResultsBtn.addEventListener('click', showResultsWindow);
     };
 };
