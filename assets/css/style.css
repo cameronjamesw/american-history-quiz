@@ -288,7 +288,7 @@ form .active:hover {
 i {
     color: #fff;
     margin: 25px;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 i:hover {
@@ -516,6 +516,10 @@ i:hover {
         width: fit-content;
     }
 
+    i {
+        font-size: 3rem;
+    }
+
     /* This section refers to the results window */
 
 #resultsDiv {
@@ -662,6 +666,10 @@ i:hover {
         margin: 0 30px 20px 30px;
         text-align: center;
         width: fit-content;
+    }
+
+    i {
+        font-size: 4rem;
     }
 
         /* This section refers to the results window */
