@@ -4,6 +4,19 @@
 
 View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github.io/american-history-quiz)
 
+# Testing Contents
+
+* [Automated Testing](#automated-testing)
+    * [W3C Validator](#w3c-validator)
+    * [JSHint Validator](#jshint-validator)
+    * [Lighthouse](#lighthouse)
+* [Manual Testing](#manual-testing)
+    * [Features Testing](#features-testing)
+    * [Browser Compatibilty & Responsivity](#browser-compatiblity--responsiveness)
+    * [Bugs](#bugs)
+    * [Accessiblity](#accessibility)
+
+    
 # Automated Testing
 
 ## W3C Validator
