@@ -4,6 +4,24 @@
 
 View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github.io/american-history-quiz)
 
+# Automated Testing
+
+## W3C Validator
+
+[W3C](https://validator.w3.org/) was used to validate the HTML page of the website. It was also used to validate the CSS.
+
+* [index.html](assets/images/validation/w3c-ss.png) - passed, no errors found
+
+* [style.css](assets/images/validation/jigsaw-ss.png) - passed, no errors found
+
+## JSHint Validator
+
+[jshint](https://jshint.com/) was used to validate the JavaScript.
+
+* [script.js](assets/images/validation/jshint-ss.png) - passed, no errors found
+
+## Lighthouse
+
 # Manual Testing
 
 ## Features Testing
