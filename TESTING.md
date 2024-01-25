@@ -72,7 +72,10 @@ Exit Quiz Button | Click Exit Quiz Button | Collapse Results Window | ![GIF of c
 
 Browser | width > 768px | width > 1024px | 1024px < width | pass/fail
 --- | --- | --- | --- | ---
-Chrome | ![Chrome Mobile View](assets/images/responsive-img/chrome-mobile-ss.png) | ![Chrome Tablet View](assets/images/responsive-img/chrome-tablet-ss.png) | ![Chrome desktop view](assets/images/responsive-img/chrome-desktop-ss.png)| pass
+Chrome | ![Chrome Mobile View](assets/images/responsive-img/chrome-mobile-ss.png) | ![Chrome Tablet View](assets/images/responsive-img/chrome-tablet-ss.png) | ![Chrome desktop view](assets/images/responsive-img/chrome-desktop-ss.png)| Pass
+Safari | ![Safari Mobile View](assets/images/responsive-img/safari-mobile-ss.png) | ![Safari Tablet View](assets/images/responsive-img/safari-tablet-ss.png) | ![Safari Desktop View](assets/images/responsive-img/safari-desktop-ss.png) | Pass
+FireFox | ![Firefox mobile view](assets/images/responsive-img/firefox-mobile-ss.png) | ![Firefox tablet view](assets/images/responsive-img/firefox-tablet-ss.png) | ![Firefox desktop view](assets/images/responsive-img/firefox-desktop-ss.png) | Pass
+Microsoft Edge | ![Edge mobile view](assets/images/responsive-img/edge-mobile-ss.png) | ![Edge tablet view](assets/images/responsive-img/edge-tablet-ss.png) | ![Edge desktop view](assets/images/responsive-img/edge-desktop-ss.png) | Pass
 
 ## Bugs
 
