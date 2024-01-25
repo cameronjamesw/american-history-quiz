@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body>
+<body aria-label="Background image of The White House with a gray gradient overlay">
   <header>
     <h1 id="heading"><span class="white">The Star-Spangled Quiz</span></h1>
   </header>
-  <main id="container">
+  <main id="container" aria-labelledby="welcome-div welcome-text">
     <!-- This contains the content -->
     <div id="welcome-div">
       <!-- This div contains the welcome text -->
@@ -32,7 +32,7 @@
     </div>
     <br />
     <br />
-    <div id="prompt-div">
+    <div id="prompt-div" aria-labelledby="prompt-div prompt-text">
       <p id="prompt-text">
         Login or register below to start your American history journey!
       </p>
@@ -42,7 +42,8 @@
     <br />
     <div id="form-div">
       <!-- This div contains the form -->
-      <form action="https://formdump.codeinstitute.net/" method="POST" id="form" target="_blank">
+      <form action="https://formdump.codeinstitute.net/" method="POST" id="form" target="_blank"
+          aria-labelledby="formTitleDiv formHeading inputs username user-msg email password confirm-password error-msg submitBtns">
         <div id="formTitleDiv">
           <h3 id="formHeading"><span class="white" id="title">Sign-Up</span></h3>
         </div>
@@ -54,9 +55,9 @@
           <input type="password" placeholder="Confirm Password" id="confirm-password" required />
           <p id="error-msg" class="error-msg"></p>
         </div>
-        <div id="submitBtns">
-          <button type="submit" id="submit-btn">Submit</button>
-          <button id="guestBtn">Continue as a Guest</button>
+        <div id="submitBtns" aria-labelledby="submit-btn guest">
+          <button type="submit" id="submit-btn" aria-label="Submit the form and continue to the quiz">Submit</button>
+          <button id="guestBtn" aria-label="Continue as a guest and bypass the form">Continue as a Guest</button>
         </div>
         <br><br>
         <!-- This div contains the Sign-In and Sign-Up Buttons -->
@@ -70,40 +71,40 @@
     <!-- This div contains the Difficulty Section -->
     <div id="beginDiv">
       <div id="beginBtn" data-type='begin' class="diffBtn">
-        <h3>Begin Quiz</h3>
+        <h3 aria-label="Click this button to begin the quiz">Begin Quiz</h3>
       </div>
     </div>
 
     <!-- This section contains the Quiz Window -->
-    <div id="questionBackground">
+    <div id="questionBackground" aria-labelledby="questionBackground questionWindow questionNoTextDiv questionNoText questionDiv questionText answerDiv">
     <div id="questionWindow">
-      <div id="questionNoTextDiv">
+      <div id="questionNoTextDiv" aria-labelledby="questionNoText quizCross">
         <p id="questionNoText"><span class="white">Question 1 of 15</span></p>
-        <i class="fa-solid fa-xmark" id="quizCross"></i>
+        <i class="fa-solid fa-xmark" id="quizCross" aria-label="Click this button to close the quiz window"></i>
       </div>
       <div id="questionDiv">
         <!-- This is the h3 element that will be manipulated by JavaScript -->
-        <h3 id="questionText">Who was the first President of the United States of America?</h3>
+        <h3 id="questionText" aria-label="This is the question">Who was the first President of the United States of America?</h3>
       </div>
-      <div id="answerDiv">
+      <div id="answerDiv" aria-labelledby="answer1 answer2 answer3 answer4">
         <!-- These are the elements that will be targeted by JavaScript -->
-        <div class="answerText">
+        <div class="answerText" id="answer1" aria-label="This is answer1">
           John Adams
         </div>
-        <div class="answerText">
+        <div class="answerText" id="answer2" aria-label="This is answer2">
           George Washington
         </div>
-        <div class="answerText">
+        <div class="answerText" id="answer3" aria-label="This is answer3">
           Benjamin Franklin
         </div>
-        <div class="answerText">
+        <div class="answerText" id="answer4" aria-label="This is answer4">
           Donald Trump
         </div>
       </div>
-      <div id="nextQuestionDiv">
+      <div id="nextQuestionDiv" aria-labelledby="nextQuestionBtn seeResultsID">
         <p id="nextQuestionBtn" class="question-btn">Next Question</p>
         <!-- This paragraph is hidden until called by JavaScript -->
-        <p id="seeResultsID">See Results</p>
+        <p id="seeResultsID" aria-label="Click this button to see your result">See Results</p>
       </div>
     </div>
   </div>
@@ -113,8 +114,8 @@
     <p id="resultsText">Good job, you scored <span id="score">3</span> of out 15!</p>
 
     <!-- These are the reset buttons -->
-    <div id="tryAgainBtn" class="resetBtn">Try Again</div>
-    <div id="exitQuizBtn" class="resetBtn">Exit Quiz</div>
+    <div id="tryAgainBtn" class="resetBtn" aria-label="CLick this button to try again">Try Again</div>
+    <div id="exitQuizBtn" class="resetBtn" aria-label="Click this button to exit the quiz">Exit Quiz</div>
     </div>
   </main>
   <footer>
