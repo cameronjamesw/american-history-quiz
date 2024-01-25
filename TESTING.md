@@ -29,14 +29,27 @@ Click Next Question | Click Next Question Button | Shows the next question | ![G
 Click Get Results | Click Get Results Button | Collapses question window, reveals results window | ![GIF of clicking see results](assets/images/quiz-table-ss/select-get-results-ezgif.com-video-to-gif-converter.gif) | Pass
 
 
-### Browser Compatiblity
+## Browser Compatiblity
 
-### Responsiveness
+## Responsiveness
 
-### Code Validation
+## Code Validation
 
-### Bugs
+## Bugs
 
-### Lighthouse
+### Fixed Bugs
 
-### Accessibility
+No. | Bug | Expected Outcome | Actual Outcome | Fixed
+--- | --- | --- | --- | ---
+1 | No questions in the question window | Questions displayed upon clicking begin | ![A screenshot of no questions showing bug](assets/images/bugs-ss/no-questions-ss.gif) | Yes
+
+### Known Bugs 
+
+No. | Bug | Expected Outcome | Actual Outcome
+--- | --- | --- | ---
+1 | Clicking the last answer multiple times will duplicate the See Results button | See Results button only displayed once | ![A GIF showing multiple See Results Button](assets/images/bugs-ss/multiple-check-results-ezgif.com-video-to-gif-converter.gif)
+2 | Clicking the correct answer multiple times will increment score | Only incrementing the score once if answer if correct | ![A screenshot showing the score being too high](assets/images/bugs-ss/wrong-score.png)
+
+## Lighthouse
+
+## Accessibility
