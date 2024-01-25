@@ -22,11 +22,12 @@ Continue As Guest | Click Continue As Guest | Hides form without submitting, dis
 Feature | Test Case | Outcome | Screenshot | Pass or Fail
 --- | --- | --- | --- | ---
 Hover Begin Button | Hover Button | Changes Border & Text Color | ![GIF of hovering begin button](assets/images/quiz-table-ss/hover-begin-ezgif.com-video-to-gif-converter.gif) | Pass
-Click Begin Button | Click Button | Hides Begin Window, Shows Quiz Window | ![GIF of clicking begin button](assets/images/quiz-table-ss/hide-begin.gif) | Pass
+Begin Button | Click Button | Hides Begin Window, Shows Quiz Window | ![GIF of clicking begin button](assets/images/quiz-table-ss/hide-begin.gif) | Pass
 Hover Answer Button | Hover Answer | Changes Border & Text Color | ![GIF of hovering answer button](assets/images/quiz-table-ss/hover-answer-ezgif.com-video-to-gif-converter.gif) | Pass
-Click Answer Button | Click An Answer | Changes Border & Text Color, reveals next question button | ![GIF of clicking an answer](assets/images/quiz-table-ss/select-answer-ezgif.com-video-to-gif-converter.gif) | Pass
-Click Next Question | Click Next Question Button | Shows the next question | ![GIF of clicking next question button](assets/images/quiz-table-ss/select-next-question-ezgif.com-video-to-gif-converter.gif) | Pass
-Click Get Results | Click Get Results Button | Collapses question window, reveals results window | ![GIF of clicking see results](assets/images/quiz-table-ss/select-get-results-ezgif.com-video-to-gif-converter.gif) | Pass
+Answer Button | Click An Answer | Changes Border & Text Color, reveals next question button | ![GIF of clicking an answer](assets/images/quiz-table-ss/select-answer-ezgif.com-video-to-gif-converter.gif) | Pass
+Next Question | Click Next Question Button | Shows the next question | ![GIF of clicking next question button](assets/images/quiz-table-ss/select-next-question-ezgif.com-video-to-gif-converter.gif) | Pass
+See Results | Click See Results Button | Collapses question window, reveals results window | ![GIF of clicking see results](assets/images/quiz-table-ss/select-get-results-ezgif.com-video-to-gif-converter.gif) | Pass
+X Button | Click X Button | Exit Quiz before reaching the end | ![A GIF clicking the X button and collapsing the quiz window](assets/images/quiz-table-ss/collapse-quiz-ezgif.com-video-to-gif-converter.gif)
 
 
 ## Browser Compatiblity
