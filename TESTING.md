@@ -68,11 +68,11 @@ Try Again Button | Click Try Again Button | Collapses Results Window, reveals Be
 Exit Quiz Button | Click Exit Quiz Button | Collapse Results Window | ![GIF of clicking exit quiz  button](assets/images/results-table/click-exit-quiz-ezgif.com-video-to-gif-converter.gif) | Pass
 
 
-## Browser Compatiblity
+## Browser Compatiblity & Responsiveness
 
-## Responsiveness
-
-## Code Validation
+Browser | width > 768px | width > 1024px | 1024px < width | pass/fail
+--- | --- | --- | --- | ---
+Chrome | ![Chrome Mobile View](assets/images/responsive-img/chrome-mobile-ss.png) | ![Chrome Tablet View](assets/images/responsive-img/chrome-tablet-ss.png) | ![Chrome desktop view](assets/images/responsive-img/chrome-desktop-ss.png)| pass
 
 ## Bugs
 
@@ -89,7 +89,5 @@ No. | Bug | Expected Outcome | Actual Outcome
 1 | Clicking the last answer multiple times will duplicate the See Results button | See Results button only displayed once | ![A GIF showing multiple See Results Button](assets/images/bugs-ss/multiple-check-results-ezgif.com-video-to-gif-converter.gif)
 2 | Clicking the correct answer multiple times will increment score | Only incrementing the score once if answer is correct | ![A screenshot showing the score being too high](assets/images/bugs-ss/wrong-score.png)
 3 | Background image scrolls with page on iOS Devices despite having fixed attribute | Content scrolls on top of a fixed background | 
-
-## Lighthouse
 
 ## Accessibility
