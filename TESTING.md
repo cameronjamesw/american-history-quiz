@@ -95,3 +95,18 @@ No. | Bug | Expected Outcome | Actual Outcome
 1 | Background image scrolls with page on iOS Devices despite having fixed attribute | Content scrolls on top of a fixed background | ![GIF showing the background moving with the image](assets/images/bugs-ss/background-bug.gif)
 
 ## Accessibility
+
+I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been have achieved by:
+
+* Using a semantic HTML structure.
+* Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
+* Choosing a sans serif font for the site - these fonts are suitable for people with dyslexia.
+* Ensuring that there is a sufficient colour contrast throughout the site regarding the meaninful content.
+
+Using the Web Disability Simulator within Google Chrome Dev Tools, I have been able to test the website against some of the major accessiblity impairments. With both green and red being important colors within the color scheme, I was interested to see how somebody with this visual impairment would see the website. Here is the result.. 
+
+![Screenshot of the website through a red/green color blind perspective](assets/images/red-green-blind-ss.png)
+
+When considering implementing future features, it would be very beneficial to accompany the visual impairment of being fully color blind. Through doing some research earlier, it has become clear to me that the quiz window of my website is not very accessible to someone with this visual impairment. 
+
+![Screenshot of the website through a fully color blind perspective](assets/images/full-color-blind-ss.png)
