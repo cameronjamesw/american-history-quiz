@@ -222,6 +222,11 @@ function resetState(){
 };
 
 function showAnswer(e){
+    let eventButtons = document.getElementsByClassName('answerText');
+    for (let eventButton of eventButtons) {
+        eventButton.removeEventListener('click', showAnswer);
+    };
+    
     let clickedButton = e.target;
     
     let questionArray = easyQuestions;
@@ -244,9 +249,6 @@ dataType = clickedButton.classList.contains('correct');
          nextQuestionBtn.style.display = 'block';
     } else if (shuffledQuestions.length = currentQuestionIndex + 1) {
         let seeResultsBtn = document.getElementById('seeResultsID');
-        /*let nextQuestionDiv = document.getElementById('nextQuestionDiv');
-        nextQuestionDiv.appendChild(seeResultsBtn);*/
-        /*seeResultsBtn.setAttribute('id', 'seeResultsID');*/
         seeResultsBtn.classList.add('seeResultsBtn');
         seeResultsBtn.classList.add('question-btn');
         seeResultsBtn.style.cursor = 'pointer';
