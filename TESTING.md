@@ -84,13 +84,14 @@ Microsoft Edge | ![Edge mobile view](assets/images/responsive-img/edge-mobile-ss
 No. | Bug | Expected Outcome | Actual Outcome | Fixed
 --- | --- | --- | --- | ---
 1 | No questions in the question window | Questions displayed upon clicking begin | ![A screenshot of no questions showing bug](assets/images/bugs-ss/no-questions-ss.gif) | Yes
+2 | Clicking the last answer multiple times will duplicate the See Results button | See Results button only displayed once | ![A GIF showing multiple See Results Button](assets/images/bugs-ss/multiple-check-results-ezgif.com-video-to-gif-converter.gif) | Yes
+3 | Clicking the correct answer multiple times will increment score | Only incrementing the score once if answer is correct | ![A screenshot showing the score being too high](assets/images/bugs-ss/wrong-score.png) | Yes
+4 | When reseting quiz, see result button would not show | See Results button displayed after last question | ![A screenshot of the see results button not showing](assets/images/bugs-ss/no-results-bug-ss.png) | Yes
 
 **Known Bugs** 
 
 No. | Bug | Expected Outcome | Actual Outcome
 --- | --- | --- | ---
-1 | Clicking the last answer multiple times will duplicate the See Results button | See Results button only displayed once | ![A GIF showing multiple See Results Button](assets/images/bugs-ss/multiple-check-results-ezgif.com-video-to-gif-converter.gif)
-2 | Clicking the correct answer multiple times will increment score | Only incrementing the score once if answer is correct | ![A screenshot showing the score being too high](assets/images/bugs-ss/wrong-score.png)
-3 | Background image scrolls with page on iOS Devices despite having fixed attribute | Content scrolls on top of a fixed background | 
+1 | Background image scrolls with page on iOS Devices despite having fixed attribute | Content scrolls on top of a fixed background | 
 
 ## Accessibility
