@@ -36,6 +36,12 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
 
 * [Manual Testing](#manual-testing)
 
+* [Credit](#credits)
+    * [Code Used](#code-used)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgements](#acknoledgements)
+
 # Introduction
 
 ## A Brief Overview
@@ -238,7 +244,35 @@ HTML, CSS & JavaScript
 
 * [Web Disability Simulator](https://chromewebstore.google.com/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla)
 
+* [Coolors](https://coolors.co/)
+
 # Manual Testing
 
 The Manual Testing can be found [here](TESTING.md)
+
+# Credits
+
+## Code Used
+
+- I took a lot of inspiration from [this YouTube video](https://www.youtube.com/watch?v=LTPGyaEyTI4&t=1195s) where by [Great Stack](https://www.youtube.com/@GreatStackDev) talks through creating log-in/registration form using JavaScript. In particular I took a inspiration for creating a toggle sign-in/sign-up button using this tutorial.
+
+- Whenever I find myself puzzled with JavaScript code that I cannot wrap my head around, I always find myself referring back to [Web Dev Simplified](https://www.youtube.com/c/webdevsimplified) where Kyle does an excellent job at explaining some pretty complex concepts. In particular [this video](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1311s) helped me grasp the concept of one of the best ways to structure a quiz with appending and removing child elements.
+
+## Content
+
+* [Mentimeter](https://www.mentimeter.com/templates/p/american-history-quiz-and-questions) - This is the first webite I used to gather research regarding American History
+
+* [Parade](https://parade.com/living/us-history-trivia-questions) - This is the second website that I used to gather information regarding American History
+
+## Media
+
+* [Clipartix](https://clipartix.com/cartoon-american-flag-image-56708/) - This is the Favicon
+
+* [Alphacoders](https://pics.alphacoders.com/pictures/view/307629) - This is the image of the White House
+
+## Acknoledgements
+
+- I would like to thank my mentor Jubril Akolade for really helping me through this project and reassuring me during times when my motivation was awfully low.
+
+- I would like to thank all of my friends and family who took part in the quiz during and after development to look for bugs and other issues!
 
