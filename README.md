@@ -113,7 +113,7 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ## Quiz Window 
 
-### Upon Loading
+**Upon Loading**
 
 ![A screenshot of the quiz window that the user can expect to see upon clicking the begin wuiz button.](assets/images/features-ss/display-question-ss.png)
 
@@ -123,7 +123,7 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ![A screenshot showing an answer being hovered](assets/images/features-ss/hover-answer-ss.png)
 
-### Selecting An Answer
+**Selecting An Answer**
 
 ![A screenshot showing an answer being selected](assets/images/features-ss/select-answer-ss.png)
 
@@ -132,18 +132,41 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 
 ![A screenshot showing the next question button being hovered over](assets/images/features-ss/hover-next-question-ss.png)
 
-### Incrementing Question Number
+**Incrementing Question Number**
 
 ![A screenshot of the question number incrementing](assets/images/features-ss/increment-question-ss.png)
 
 - Located at the top of the form, the user will notice some text showing them what queston they are on. This text shows the user the index of the question that they are on.
 
-### See Results Button
+**See Results Button**
 
 ![A screenshot of the See Results button](assets/images/features-ss/see-results-ss.png)
 
-- One the user has answered all 15 questions, the 'next question' button will be replaced with the 'see results' button. Upon clicking this button, the quiz window will collpase and the user will be shown the results window.
+- Once the user has answered all 15 questions, the 'next question' button will be replaced with the 'see results' button. Upon clicking this button, the quiz window will collpase and the user will be shown the results window.
 - The 'see results' button follows the same pallet as the 'next question' button. 
+
+## Results Window
+
+**Score Display**
+
+![A screenshot of the score display at the end of the quiz](assets/images/features-ss/score-number-ss.png)
+
+- Upon clicking thed See Results Button, the user will be taken to the results window. Here the first thing they see is the score out of 15 that they achieved.
+- The text is contained with a black box with a white border, this giving it an excellent contrast from the rest of the content on the page.
+
+**Try Again Button**
+
+![A screenshot of the Try Again Button being hovered over](assets/images/features-ss/try-again-ss.png)
+
+- Below the score box, the user can find 1 of 2 buttons, the first being the Try Again button. This feature maximises user experience for the user as if they want to retry the quiz, or another user wants to try again on the same device, then they are able to reset the quiz without refreshing the browser or bypasing the form. The functionality of this button provides less hassle for the user.
+- This button will collapse the results window the user is currently viewing and will in turn reveal the aforementioned Begin Quiz Window. The score is automatically reset to 0 upon clicking this button. 
+- As seen in the screenshot above, the button follows the main aesthetic of the website of haviving white text surrounded by a red border, and upon hovering the border color changes to blue.
+
+**Exit Quiz Button**
+
+![A screenshot of the Exit Quix Button being hovered over](assets/images/features-ss/exit-quiz-ss.png)
+
+- The second button that the user can see is the Exit Quiz Button. This button allowsfor the user to collapse the results window, and thus marks the end of the quiz.
 
 # Manual Testing
 
