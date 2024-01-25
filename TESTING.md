@@ -1,3 +1,9 @@
+# The Star-Spangled Quiz - Manual Testing
+
+![The Star Spangled Quiz](assets/images/amiresponsive-ss.png)
+
+View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github.io/american-history-quiz)
+
 # Manual Testing
 
 ## Features Testing
