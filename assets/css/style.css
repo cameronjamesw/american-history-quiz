@@ -391,6 +391,11 @@ form .active:hover {
         justify-content: center;
 }
 
+.resetBtn:hover {
+    cursor: pointer;
+    border: #000080 2px solid;
+}
+
 /* Media Query for Tablets and higher (768px and higher) */
 
 @media screen and (min-width: 768px) {

@@ -283,6 +283,7 @@ dataType = clickedButton.classList.contains('correct');
         let seeResultsBtn = document.createElement('p');
         let nextQuestionDiv = document.getElementById('nextQuestionDiv');
         nextQuestionDiv.appendChild(seeResultsBtn);
+        seeResultsBtn.setAttribute('id', 'seeResultsID');
         seeResultsBtn.classList.add('seeResultsBtn');
         seeResultsBtn.classList.add('question-btn');
         seeResultsBtn.innerHTML = 'See Results';
@@ -319,6 +320,32 @@ function clearAnswerClass(element){
 };
 
 // This section refers to the Results Window 
+
+function closeQuiz() {
+    let resultsWindow = document.getElementById('resultsDiv');
+    resultsWindow.style.maxHeight ='0';
+    resultsWindow.style.transitionDelay = '0s';
+};
+
+function tryAgain() {
+    closeQuiz();
+    let beginDiv = document.getElementById('beginDiv');
+    beginDiv.style.maxHeight = '1000px';
+    beginDiv.style.transitionDelay = '3s';
+    let nextQuestionDiv = document.getElementById('nextQuestionDiv');
+    let seeResultsBtn = document.getElementById('seeResultsID');
+    nextQuestionDiv.removeChild(seeResultsBtn);
+    seeResultsBtn.classList.remove('seeResultsBtn');
+    seeResultsBtn.classList.remove('question-btn');
+    score = 0;
+
+};
+
+let tryAgainBtn = document.getElementById('tryAgainBtn');
+tryAgainBtn.addEventListener('click', tryAgain);
+
+let exitQuizBtn = document.getElementById('exitQuizBtn');
+exitQuizBtn.addEventListener('click', closeQuiz);
 
 const easyQuestions = [
     {
