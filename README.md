@@ -19,6 +19,7 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
         * [How to Clone](#how-to-clone)
 
 * [Design](#design)
+    *[Color Scheme](#color-scheme)
     * [Wireframes](#wireframing)
         * [Landing PAge Wireframes](#landing-page-wireframe)
         * [Quiz Window Wireframes](#quiz-window-wireframe)
@@ -38,7 +39,7 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
 
 ## A Brief Overview
 
-- The purpose of the American History Quiz is to provide students and quiz-enthusiasts alike a vague introduction into American History through the means of engaging in a short but sweet quiz which has 3 levels of difficulty for the challenger. 
+- The purpose of the American History Quiz is to provide students and quiz-enthusiasts alike a vague introduction into American History through the means of engaging in a short but sweet quiz. 
 
 - The questions provided within the quiz of course all surround American historty, from rather obscure questions regarding former Presidents of the country, through to general questions concerning the geography of the 50 states, the quiz is jam packed with an array of questions where every challenger is sure to learn something new. 
 
@@ -46,8 +47,7 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
 
 - The target audience of the Star Spangled Quiz are mainly history students and quiz-enthusiasts, as well as the members of the general public who enjoy engaging in the odd quiz from time to time. 
 
-- With the demand for pub quizzes rising throughout the country, a website where the challenger can cycle through 3 different levels of difficulty surrounding the same topic would be highly welcomed. 
-
+- With the demand for pub quizzes rising throughout the country, a website where the challenger can cycle through a plathora of questions ranging in difficulty is sure to be highly welcomed. 
 
 # Deployment & Local Development
 
@@ -86,14 +86,23 @@ To clone the repository:
 
 # Design
 
+## Color Scheme
+
+- With the quiz surrounding American History, I thought it would be a great idea to utilise the colors of the American Flag as the color pallet for my website. This being because they all contrast excellently with each other therefore maximising accessibilty. 
+
+    - For the main text content I wanted to use `#ffffff`, a very simple color to begin with setting the tone nicely for the rest of the website.
+    - I planned to use `#ff0000` for the secondary color as this provides a nice contrast to the white.
+    - `#000080` has been used along side `#ff0000` to support the rest of the content, this is used as a border surrounding important buttons in order to bring the users attention to them.
+    - finally, I have used `#d3d3d3` as the final color just to complement `#ffffff` and give the website a sleek finish where needs be.
+
+![A screenshot of the color pallet used for the website](assets/images/Color%20Pallet.jpg)
+
 ## Wireframing
 
 - Here are the screenshots of the initial wireframes I had created for the quiz website. I have drafted a wireframe for the landing page with the welcome text and registration form, as well as a wireframe for the quiz window.
 
 - The use of wireframing is beneficial to myself and the reader. 
-    - Firstly myself as this allows me to visualise how I want the website to look, and therefore I can begin consider how I will structure this with HTML and CSS. Once the design basics have been noted, I am able to visualise the JavaScript with a considerable amount of depth. Working to a plan presents better results.
-
-    - Secondly, this will benefit the reader as it will allow them to see the thought process behind the features. Any final features that have changed compared to the wireframe will be documented with an explanation, giving the reader an insight as to why this has changed.
+    -  Creating a wireframe allows me to visualise how I want the website to look, and therefore I can begin consider how I will structure this with HTML and CSS. Once the design basics have been noted, I am able to visualise the JavaScript with a considerable amount of depth. Working to a plan presents better results. Furthemore, this will benefit the reader as it will allow them to see the thought process behind the features.
 
 ### Landing Page Wireframe
 
@@ -219,6 +228,8 @@ HTML, CSS & JavaScript
 * [Google Developer Tools](https://developers.google.com/web/tools) - Used to debug the website as well as test responsive styling
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+* [Web Disability Simulator](https://chromewebstore.google.com/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla)
 
 # Manual Testing
 
