@@ -1,4 +1,4 @@
-# The Star-Spangled Quiz - Manual Testing
+# The Star-Spangled Quiz - Testing
 
 ![The Star Spangled Quiz](assets/images/amiresponsive-ss.png)
 
@@ -16,7 +16,7 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
     * [Bugs](#bugs)
     * [Accessiblity](#accessibility)
 
-    
+
 # Automated Testing
 
 ## W3C Validator
