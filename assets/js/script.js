@@ -17,9 +17,9 @@ function showSignin(){
     passwordConfirmedField.style.maxHeight = '0';
     passwordConfirmedField.style.paddingTop = '0';
     passwordConfirmedField.style.paddingBottom = '0';
-    passwordField.setAttribute('placeholder', 'Enter Password')
+    passwordField.setAttribute('placeholder', 'Enter Password');
     usernameField.setAttribute('placeholder', 'Enter Username');
-};
+}
 
 /**
  * This function will show the 'confirm passowrd' field, as well as changing the title to 'sign-up'
@@ -34,11 +34,11 @@ function showSignup(){
     passwordConfirmedField.style.paddingTop = '20px';
     passwordField.setAttribute('placeholder', 'Create Password');
     usernameField.setAttribute('placeholder', 'Create Username');
-};
+}
 
 signinBtn.addEventListener('click', showSignin);
 
-signupBtn.addEventListener('click', showSignup)
+signupBtn.addEventListener('click', showSignup);
 
 // This is the form validation
 
@@ -53,7 +53,7 @@ function handleSubmit(event) {
     let usernameLength = document.getElementById('username').value.length;
     let user = document.getElementById('username').value;
     let passwordValue = document.getElementById('password').value;
-    let passwordValueLength = document.getElementById('password').value.length
+    let passwordValueLength = document.getElementById('password').value.length;
     let confirmPasswordValue = document.getElementById('confirm-password').value;
     let userErrorMsg = document.getElementById('user-msg');
     let passErrorMsg = document.getElementById('error-msg');
@@ -112,7 +112,7 @@ function showBeginWindow(){
     let beginDiv = document.getElementById('beginDiv');
     beginDiv.style.maxHeight = '1000px';
     beginDiv.style.transitionDelay = '2s';
-};
+}
 
 /**
  * This function makes the Begin Quiz button change border and font
@@ -123,7 +123,7 @@ function beginHover(event){
     beginBtn.style.borderColor = 'red';
     beginBtn.style.color = 'red';
     beginBtn.style.cursor = 'pointer';
-};
+}
 
 /**
  * This function makes the Begin Quiz Button change border 
@@ -132,7 +132,7 @@ function beginHover(event){
 function beginOut(event){
     beginBtn.style.borderColor = 'white';
     beginBtn.style.color = 'white';
-};
+}
 
 let beginBtn = document.getElementById('beginBtn');
 beginBtn.addEventListener('mouseover', beginHover);
@@ -148,7 +148,7 @@ function hideBeginWindow(){
     let beginDiv = document.getElementById('beginDiv');
     beginDiv.style.maxHeight = '0';
     beginDiv.style.transitionDelay = '0s';
-};
+}
 
 /**
  * This function reveals the quiz window by setting the max-height
@@ -169,8 +169,8 @@ function showQuestionWindow() {
         questionWindow.style.minHeight = '850px';
     } else {
         questionWindow.style.minHeight = '750px';
-    };
-};
+    }
+}
 
 
 // This section adds functionality to the quiz window
@@ -189,10 +189,10 @@ let score = 0;
 function runQuiz() {
     hideBeginWindow();
     showQuestionWindow();
-    shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
+    shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     getQuestion();
-};
+}
 
 beginBtn.addEventListener('click', runQuiz);
 
@@ -211,7 +211,7 @@ function getQuestion(){
     getNextQuestion(shuffledQuestions[currentQuestionIndex]);
     let questionNumber = document.getElementById('questionNoText');
     questionNumber.innerHTML = `<span class="white">Question ` + (parseInt(currentQuestionIndex) + 1) + ` of 15</span>`;
-};
+}
 
 /**
  * This function sets the question Inner-html using question parameter.
@@ -228,8 +228,8 @@ function getNextQuestion(easyQuestions) {
             button.dataset.correct = answer.correct;
         } button.addEventListener('click', showAnswer);
         answerDivElement.appendChild(button);
-    })
-};
+    });
+}
 
 /**
  * This function removes the div elements created in the function above,
@@ -240,8 +240,8 @@ function resetState(){
     nextQuestionBtn.style.display = 'none';
     while (answerDivElement.firstChild){
         answerDivElement.removeChild(answerDivElement.firstChild);
-    };
-};
+    }
+}
 
 /**
  * This function deactivates the answer buttons after the first click.
@@ -253,12 +253,12 @@ function showAnswer(e){
     let eventButtons = document.getElementsByClassName('answerText');
     for (let eventButton of eventButtons) {
         eventButton.removeEventListener('click', showAnswer);
-    };
+    }
     
     // Thid takes the object's correct value and passes it to the setAnswer Class function
     let clickedButton = e.target;
     Array.from(answerDivElement.children).forEach(button => {
-        setAnswerClass(button, button.dataset.correct)
+        setAnswerClass(button, button.dataset.correct);
     });
 
     // This increments the user's score by 1 if answered correctly
@@ -279,8 +279,8 @@ function showAnswer(e){
         seeResultsBtn.style.cursor = 'pointer';
         seeResultsBtn.style.display = 'block';
         seeResultsBtn.addEventListener('click', showResultsWindow);
-    };
-};
+    }
+}
 
 /**
  * This function takes the parameter of the question objects answer values, if correct it adds
@@ -290,13 +290,13 @@ function setAnswerClass(element, correct){
     // The clear answer class removes the datatype and class for the next question
     clearAnswerClass(element);
     if (correct) {
-        element.classList.add('correct')
+        element.classList.add('correct');
         element.setAttribute('data-type', 'correct');
     } else {
         element.classList.add('wrong');
         element.setAttribute('data-type', 'false');
     }
-};
+}
 
 /**
  * This function removes both the class and data-type of the parameters passed
@@ -307,7 +307,7 @@ function clearAnswerClass(element){
     element.classList.remove('wrong');
     element.removeAttribute('data-type', 'correct');
     element.removeAttribute('data-type', 'false');
-};
+}
 
 // This section refers to the Results Window 
 
@@ -331,7 +331,7 @@ function closeQuiz() {
     let resultsWindow = document.getElementById('resultsDiv');
     resultsWindow.style.maxHeight ='0';
     resultsWindow.style.transitionDelay = '0s';
-};
+}
 
 /**
  * This function closes the Results Window and re-opens the 
@@ -347,7 +347,7 @@ function tryAgain() {
 
     // User score is set back to 0
     score = 0;
-};
+}
 
 let tryAgainBtn = document.getElementById('tryAgainBtn');
 tryAgainBtn.addEventListener('click', tryAgain);
@@ -364,7 +364,7 @@ function exitQuiz() {
     questionWindow.style.maxHeight = '0';
     questionWindow.style.minHeight = '0';
     questionWindow.style.transitionDelay = '0s';
-};
+}
 
 let crossBtn = document.getElementById('quizCross');
 crossBtn.addEventListener('click', exitQuiz);
