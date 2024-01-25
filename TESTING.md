@@ -92,6 +92,6 @@ No. | Bug | Expected Outcome | Actual Outcome | Fixed
 
 No. | Bug | Expected Outcome | Actual Outcome
 --- | --- | --- | ---
-1 | Background image scrolls with page on iOS Devices despite having fixed attribute | Content scrolls on top of a fixed background | 
+1 | Background image scrolls with page on iOS Devices despite having fixed attribute | Content scrolls on top of a fixed background | ![GIF showing the background moving with the image](assets/images/bugs-ss/background-bug.gif)
 
 ## Accessibility

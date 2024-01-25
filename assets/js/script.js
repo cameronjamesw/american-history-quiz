@@ -483,7 +483,7 @@ const easyQuestions = [
     {
         question: 'What is the capital city of Wyoming?',
         answer: [
-            {text: 'Chyenne', correct: true},
+            {text: 'Cheyenne', correct: true},
             {text: 'Baton Rouge', correct: false},
             {text: 'Tallahasee', correct: false},
             {text: 'Casper', correct: false}
