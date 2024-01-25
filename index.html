@@ -42,16 +42,16 @@
     <br />
     <div id="form-div">
       <!-- This div contains the form -->
-      <form action="https://formdump.codeinstitute.net/" method="POST" id="form" target="_blank"
+      <form action="https://formdump.codeinstitute.net/" method="post" id="form" target="_blank"
           aria-labelledby="formTitleDiv formHeading inputs username user-msg email password confirm-password error-msg submitBtns">
         <div id="formTitleDiv">
           <h3 id="formHeading"><span class="white" id="title">Sign-Up</span></h3>
         </div>
         <div id="inputs">
-          <input type="text" placeholder="Create Username" id="username" required />
+          <input type="text" placeholder="Create Username" id="username" name="username" required />
           <p id="user-msg" class="error-msg"></p><br>
-          <input type="email" placeholder="Email Address" id="email" required /> <br>
-          <input type="password" placeholder="Create Password" id="password" required /> <br>
+          <input type="email" placeholder="Email Address" id="email" name="email" required /> <br>
+          <input type="password" placeholder="Create Password" name="password" id="password" required /> <br>
           <input type="password" placeholder="Confirm Password" id="confirm-password" required />
           <p id="error-msg" class="error-msg"></p>
         </div>
