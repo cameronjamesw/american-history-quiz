@@ -1,6 +1,6 @@
 # The Star-Spangled Quiz - Testing
 
-![The Star Spangled Quiz](assets/images/amiresponsive-ss.png)
+![The Star Spangled Quiz](assets/images/amiresponsive-new.png)
 
 View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github.io/american-history-quiz)
 
