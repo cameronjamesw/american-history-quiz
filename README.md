@@ -99,41 +99,9 @@ To clone the repository:
 
 ![A wireframe of the landing page](assets/images/wireframe-1.jpg)
 
-- **Background**
-    - The background is set to be an image of the White House with a gray gradient over the top of it. This is to fit the aesthetic of the quiz being a historical theme focused around American history. The gray gradient over the image will further reinforce this.
-    - Furthermore, gray is a high constrast color this meaning that the majority of colors used will provide an excellent contrast against this background. Not only will this aid visually-impaired users, this will also produce a sleek design capable of adopting almost any color pallet. 
-
-- **Welcome Text**
-    - Within the box titled 'welcome text', the description of the websitev at hand can be found, giving the user a sucinct insight of what to expect within the website.
-    - A prompt encouraging the user to scroll down will be present too, advising them to scroll down and begin the quiz.
-    - In terms of style, the box will have a white, curved border of 2pixels, giving it a contrast to the aforementioned gray background of the body. The text within this box will also be white, again giving it a contrast to the background allowing more accessiblity for the user. 
-
-- **Login Form**
-    - Underneath the welcome text there is a registration/login form where the user can either sign up or log in to their account on the quiz website. With the help of JavaScript, the user will be able to toggle between 'log-ign' and 'sign-up' using two buttons at the top of the form. This will ensure that both log-in options are contained within the same box for convenience; however this also has a sleek look to it improving the user's experience. 
-    - With the use of JavaScript, the form shall have multiple levels of validation regarding both the username and the password, this ensures that the user will not be able to create a week password or username - thus protecting their data whilst using the website. The form's of validation will ensure that the 'password' and 'confirm password' fields match, that the password is of a certain length, and that it must contain a number. 
-    - For the aesthetic of the form, it shall fdllow suit with the rest of the website's color pallet. White text contained within a black box with a white border of 2px. Through keeping up the website's aesthetic with the form, this reinforces a positive experience for the user. 
-
 ### Quiz Window Wireframe
 
 ![A wireframe of the quiz window illustrating how it was conceptulised during wireframing](assets/images/wireframe-2.jpg)
-
-- **Question Counter**
-    - Right at the top of the quiz window the user will be able to see the question number that they are on. This will be displayed as 'Question X of X', through allowing the user to see what question number they are on this will make the whole quiz process both natural and fluent.
-
-- **Quiz Window**
-    - The quiz window shall follow the same aesthetic as the rest of the website.
-    - The plan for the quiz window is for it to be hidden with CSS until it is to be called using JavaScript. The quiz window will be revealed with JavaScript once the user has submitted the form.
-
-- **Quiz Question & Answers**
-    - Within the quiz window the user will be able to locate a question followed by 4 answers relating to the question above. Both the question and the answers will inherit the same color pallet as the rest of the website. This shall keep up the consistency of the website as it shall not take the user away from the immersion of the quiz. 
-    - Upon hovering over the answers, the background of the answer in question will change color to a light blue until the user removes the cursor off of the answer. When selecting an answer, the background of answer will become a darker blue, thus indicating the answer has been selected, and shall remain dark blue unless the user indicates otherwise. 
-
-- **Submit Answer**
-    - Upon clicking the submit button, the computer will then check the selected answer against what has been documented as the correct answer. If correct, the user shall be awarded a point.
-
-- **Navigation Arrows**
-    - Underneath the quiz window, the user will be able to cycle through the questions using navigation arrows. The respective arrow will display either the question before or after the current question, depending on which arrows the user presses. 
-    - The navigation arrows shall have a color pallet of lime green. This is going against the color pallet of the website in order to draw attention to the user, and thus making them aware that they have the ability to utilise question navigation using these arrows. When the arrows are hovered over, they will display a background color of a darker green, this indicating to the user that they are prompted to click.
 
 # Features
 
@@ -234,7 +202,23 @@ To clone the repository:
 
 ## Languages Used
 
+HTML, CSS & JavaScript
+
 ## Libraries, Frameworks & Programmes Used
+
+* [Google Fonts](https://fonts.google.com/) - Used to import the fonts 
+
+* [GitHub](https://github.com) - To save and store the files for the website
+
+* [GitPod](https://gitpod.io) - IDE used to create the website
+
+* [FontAwesome](https://fontawesome.com/) - Used for an icon on the website
+
+* [Ezigif](https://ezgif.com/video-to-gif) - Used to convert .mov files to gif
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - Used to debug the website as well as test responsive styling
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
 # Manual Testing
 
