@@ -28,6 +28,10 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
         * [Quiz Window](#quiz-window)
         * [Results Window](#results-window)
 
+* [Technologies Used](#technologies-used)
+    * [Languages Used](#languages-used)
+    * [Wireframes, Libraries, Programmes](#libraries-frameworks--programmes-used)
+
 * [Manual Testing](#manual-testing)
 
 # Introduction
@@ -225,6 +229,12 @@ To clone the repository:
 ![A screenshot of the Exit Quix Button being hovered over](assets/images/features-ss/exit-quiz-ss.png)
 
 - The second button that the user can see is the Exit Quiz Button. This button allowsfor the user to collapse the results window, and thus marks the end of the quiz.
+
+# Technologies Used
+
+## Languages Used
+
+## Libraries, Frameworks & Programmes Used
 
 # Manual Testing
 
