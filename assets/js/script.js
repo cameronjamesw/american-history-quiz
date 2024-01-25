@@ -207,6 +207,7 @@ let questionElement = document.getElementById('questionText');
 let answerDivElement = document.getElementById('answerDiv');
 let shuffledQuestions;
 let currentQuestionIndex;
+let score = 0;
 
 /**
  * This function hides the difficulty menu and reveals the easy quiz window
@@ -257,10 +258,25 @@ function resetState(){
 
 function showAnswer(e){
     let clickedButton = e.target;
+    
+    let questionArray = easyQuestions;
+    let answerTrue = questionArray[0].answer[0].correct;
+        
     let correct = clickedButton.dataset.correct;
     Array.from(answerDivElement.children).forEach(button => {
         setAnswerClass(button, button.dataset.correct)
     });
+
+dataType = clickedButton.classList.contains('correct');
+    console.log(dataType);
+    if (dataType) {
+        score = ++score;
+        let scoreText = document.getElementById('score');
+    scoreText.innerHTML = parseInt(score);
+    };
+
+   
+
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
          nextQuestionBtn.style.display = 'block';
     } else {
@@ -287,39 +303,22 @@ function showResultsWindow() {
 function setAnswerClass(element, correct){
     clearAnswerClass(element);
     if (correct) {
-        element.classList.add('correct');
+        element.classList.add('correct')
+        element.setAttribute('data-type', 'correct');
     } else {
         element.classList.add('wrong');
+        element.setAttribute('data-type', 'false');
     }
 };
 
 function clearAnswerClass(element){
     element.classList.remove('correct');
     element.classList.remove('wrong');
+    element.removeAttribute('data-type', 'correct');
+    element.removeAttribute('data-type', 'false');
 };
 
 // This section refers to the Results Window 
-/*
-let resultsText = document.getElementById('resultsText');
-if (totalScore <= 2) {
-    resultsText.innerHTML = `<p>Good Try! You scored ` + parseInt(totalScore) + ` of out 5!</p>`
-} else {
-    resultsText.innerHTML = `<p>Congratulations! You scored ` + parseInt(totalScore) + ` of out 5!</p>`
-};
-*/
-// This section refers to the questions array
-// These are the easy questions
-
-
-// Medium Quiz 
-
-/**
- * This function hides the difficulty menu and reveals the easy quiz window
- */
-
-/**
- * This function hides the difficulty menu and reveals the easy quiz window
- */
 
 const easyQuestions = [
     {
