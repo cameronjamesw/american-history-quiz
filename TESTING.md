@@ -2,7 +2,7 @@
 
 ## Features Testing
 
- - ### Form Testing
+**Form Testing**
 
 Feature | Test Case | Outcome | Screenshtot | Pass or Fail
 --- | --- | --- | --- | ---
@@ -17,7 +17,7 @@ Form Validation #5 | Enter Password Without Number | Displays Relevent Error Msg
 Submit Form | Click Submit | Submits form, displays difficulty window | ![Screenshot of click submit form outcome](assets/images/form-table-ss/hide-form-screenshot.png) | Pass
 Continue As Guest | Click Continue As Guest | Hides form without submitting, displays difficulty window | ![Screenshot of continue as guest clikc outcome](assets/images/form-table-ss/hide-form-screenshot.png) | Pass
 
-### Quiz Window Testing
+**Quiz Window Testing**
 
 Feature | Test Case | Outcome | Screenshot | Pass or Fail
 --- | --- | --- | --- | ---
@@ -37,18 +37,19 @@ Click Get Results | Click Get Results Button | Collapses question window, reveal
 
 ## Bugs
 
-### Fixed Bugs
+**Fixed Bugs**
 
 No. | Bug | Expected Outcome | Actual Outcome | Fixed
 --- | --- | --- | --- | ---
 1 | No questions in the question window | Questions displayed upon clicking begin | ![A screenshot of no questions showing bug](assets/images/bugs-ss/no-questions-ss.gif) | Yes
 
-### Known Bugs 
+**Known Bugs** 
 
 No. | Bug | Expected Outcome | Actual Outcome
 --- | --- | --- | ---
 1 | Clicking the last answer multiple times will duplicate the See Results button | See Results button only displayed once | ![A GIF showing multiple See Results Button](assets/images/bugs-ss/multiple-check-results-ezgif.com-video-to-gif-converter.gif)
 2 | Clicking the correct answer multiple times will increment score | Only incrementing the score once if answer is correct | ![A screenshot showing the score being too high](assets/images/bugs-ss/wrong-score.png)
+3 | Background image scrolls with page on iOS Devices despite having fixed attribute | Content scrolls on top of a fixed background | 
 
 ## Lighthouse
 
