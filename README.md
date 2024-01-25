@@ -1,6 +1,6 @@
 # The Star-Spangled Quiz
 
-![The Star Spangled Quiz](assets/images/amiresponsive-ss.png)
+![The Star Spangled Quiz](assets/images/amiresponsive-new.png)
 
 Welcome to the Star Spangled Quiz, a quiz surrounding American History from modern day America, right through to the 18th Century. 
 
