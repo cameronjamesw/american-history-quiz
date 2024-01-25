@@ -311,7 +311,7 @@ function tryAgain() {
     beginDiv.style.transitionDelay = '3s';
     let nextQuestionDiv = document.getElementById('nextQuestionDiv');
     let seeResultsBtn = document.getElementById('seeResultsID');
-    nextQuestionDiv.removeChild(seeResultsBtn);
+    seeResultsBtn.style.display = 'none';
     seeResultsBtn.classList.remove('seeResultsBtn');
     seeResultsBtn.classList.remove('question-btn');
     score = 0;
