@@ -347,6 +347,19 @@ tryAgainBtn.addEventListener('click', tryAgain);
 let exitQuizBtn = document.getElementById('exitQuizBtn');
 exitQuizBtn.addEventListener('click', closeQuiz);
 
+function leaveQuizWindow() {
+    hiddenOverlay.style.display = 'block';
+};
+
+function exitQuiz() {
+    let questionWindow = document.getElementById('questionWindow');
+    questionWindow.style.maxHeight = '0';
+    questionWindow.style.transitionDelay = '0s';
+};
+
+let crossBtn = document.getElementById('quizCross');
+crossBtn.addEventListener('click', exitQuiz);
+
 const easyQuestions = [
     {
         question: 'Who was the first President of the United States of America?',
