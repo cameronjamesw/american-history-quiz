@@ -22,6 +22,10 @@ View the live sight here - [The Star Spangled Quiz](https://cameronjamesw.github
 
 ## Lighthouse
 
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+* [Lighthouse](assets/images/validation/lighthouse-ss.png)
+
 # Manual Testing
 
 ## Features Testing
