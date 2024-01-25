@@ -160,8 +160,19 @@ function hideDifficulty(){
  */
 function showQuestionWindow() {
     let questionWindow = document.getElementById('questionWindow');
+    let windowWidth = window.innerWidth;
     questionWindow.style.maxHeight = '2000px';
-    questionWindow.style.transitionDelay = '2s';
+    questionWindow.style.transitionDelay = '0s';
+
+    if (windowWidth < '500') {
+        questionWindow.style.minHeight = '710px';
+    } else if (windowWidth < '768') {
+        questionWindow.style.minHeight = '850px';
+    } else if (windowWidth < '1000') {
+        questionWindow.style.minHeight = '850px';
+    } else {
+        questionWindow.style.minHeight = '750px';
+    };
 };
 
 
@@ -260,6 +271,7 @@ dataType = clickedButton.classList.contains('correct');
 function showResultsWindow() {
     let questionWindow = document.getElementById('questionWindow');
     questionWindow.style.maxHeight = '0';
+    questionWindow.style.minHeight = '0';
     questionWindow.style.transitionDelay = '0s';
     let resultsWindow = document.getElementById('resultsDiv');
     resultsWindow.style.maxHeight ='1000px';
@@ -319,6 +331,7 @@ function leaveQuizWindow() {
 function exitQuiz() {
     let questionWindow = document.getElementById('questionWindow');
     questionWindow.style.maxHeight = '0';
+    questionWindow.style.minHeight = '0';
     questionWindow.style.transitionDelay = '0s';
 };
 

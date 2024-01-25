@@ -264,11 +264,13 @@ form .active:hover {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    margin: 0 50px;
+    margin: 50px;
     position: relative;
     bottom: 100px;
+    min-height: 0px;
     max-height: 0px;
     transition: max-height 2s;
+    transition: min-height 2s;
     overflow: hidden;
 }
 
