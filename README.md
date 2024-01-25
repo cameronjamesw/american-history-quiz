@@ -1,6 +1,30 @@
-### The Star-Spangled Quiz
+# The Star-Spangled Quiz
 
 Welcome to the Star Spangled Quiz, a quiz surrounding American History from modern day America, right through to the 18th Century. 
+
+# Contents
+
+* [Introduction](#introduction)
+    * [A brief overview](#a-brief-overview)
+    * [Target Audience](#target-audience)
+
+* [Deployment](#deployment--local-development)
+    * [Deployment](#deployment)
+    * [Local Development](#local-development)
+        * [How to Fork](#how-to-fork)
+        * [How to Clone](#how-to-clone)
+
+* [Design](#design)
+    * [Wireframes](#wireframing)
+        * [Landing PAge Wireframes](#landing-page-wireframe)
+        * [Quiz Window Wireframes](#quiz-window-wireframe)
+    * [Features](#features)
+        * [Landing Page](#landing-page)
+        * [Begin Quiz Window](#begin-quiz-window)
+        * [Quiz Window](#quiz-window)
+        * [Results Window](#results-window)
+
+* [Manual Testing](#manual-testing)
 
 # Introduction
 
@@ -16,7 +40,45 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
 
 - With the demand for pub quizzes rising throughout the country, a website where the challenger can cycle through 3 different levels of difficulty surrounding the same topic would be highly welcomed. 
 
-# Wireframing
+
+# Deployment & Local Development
+
+## Deployment
+
+The site is deployed using GitHub Pages - [The Star Spangled Quiz](https://cameronjamesw.github.io/american-history-quiz).
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [cameron-wheatley/american-history-quiz](https://github.com/cameronjamesw/american-history-quiz).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
+## Local Development
+
+### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [cameron-wheatley/american-history-quiz](https://github.com/cameronjamesw/american-history-quiz).
+3. Click the Fork button in the top right corner.
+
+### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, [cameron-wheatley/american-history-quiz](https://github.com/cameronjamesw/american-history-quiz).
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+# Design
+
+## Wireframing
 
 - Here are the screenshots of the initial wireframes I had created for the quiz website. I have drafted a wireframe for the landing page with the welcome text and registration form, as well as a wireframe for the quiz window.
 
@@ -25,7 +87,7 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
 
     - Secondly, this will benefit the reader as it will allow them to see the thought process behind the features. Any final features that have changed compared to the wireframe will be documented with an explanation, giving the reader an insight as to why this has changed.
 
-## Landing Page Wireframe
+### Landing Page Wireframe
 
 ![A wireframe of the landing page](assets/images/wireframe-1.jpg)
 
@@ -43,7 +105,7 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
     - With the use of JavaScript, the form shall have multiple levels of validation regarding both the username and the password, this ensures that the user will not be able to create a week password or username - thus protecting their data whilst using the website. The form's of validation will ensure that the 'password' and 'confirm password' fields match, that the password is of a certain length, and that it must contain a number. 
     - For the aesthetic of the form, it shall fdllow suit with the rest of the website's color pallet. White text contained within a black box with a white border of 2px. Through keeping up the website's aesthetic with the form, this reinforces a positive experience for the user. 
 
-## Quiz Window Wireframe
+### Quiz Window Wireframe
 
 ![A wireframe of the quiz window illustrating how it was conceptulised during wireframing](assets/images/wireframe-2.jpg)
 
@@ -65,18 +127,10 @@ Welcome to the Star Spangled Quiz, a quiz surrounding American History from mode
     - Underneath the quiz window, the user will be able to cycle through the questions using navigation arrows. The respective arrow will display either the question before or after the current question, depending on which arrows the user presses. 
     - The navigation arrows shall have a color pallet of lime green. This is going against the color pallet of the website in order to draw attention to the user, and thus making them aware that they have the ability to utilise question navigation using these arrows. When the arrows are hovered over, they will display a background color of a darker green, this indicating to the user that they are prompted to click.
 
-# Deployment 
-
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://cameronjamesw.github.io/american-history-quiz
-
 # Features
 
-## Heading
+## Landing Page
+**Heading**
 
 ![A screenshot of the header of the Star Spangled Quiz](assets/images/features-ss//header-screenshot.png)
 
@@ -84,14 +138,14 @@ The live link can be found here - https://cameronjamesw.github.io/american-histo
 - Due to the title being nested within the header, the user will be able to see the title at all points of the wuiz, thus reinforcing the brand being estblished by the website. 
 - The title adopts the color pallet used by the website, using the main color of white, combining the text-decoration with a strong red. With the theme of the quiz being American History, it makes sense for any supporting colors to be either red or blue. 
 
-## Welcome Text
+**Welcome Text**
 
 ![A screenshot of the welcome text which is being used on the website.](assets/images/features-ss//welcome-text-screenshot.png)
 
 - The welcome text is very self-explanitory, it is the text located just underneath the header which welcomes the user and gives them a brief oversight of the quiz they are about to participate in. The purpose of the text is to allow the user to metaphorically 'find their feet', while at the same time encouraging them to sign in/sign up with the form below, thus growing the brand's demographic. 
 - The welcome text section of the page upholds the color pallet aforementioned. The background of the boxes which the pieces of text are located in adopt a semi-transparent black background. This background provides an excellent contrast against the body of the website, optimising user accessiblity, whilst upholding the sleek design of the website.
 
-## Sign-Up Form
+**Sign-Up Form**
 
 ![A screenshot of the Sign-Up Form being used on the website.](assets/images/features-ss//form-screenshot.png)
 
